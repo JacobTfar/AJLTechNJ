@@ -1,0 +1,260 @@
+---
+import CallToAction from '~/components/widgets/CallToAction.astro';
+import Content from '~/components/widgets/Content.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import Stats from '~/components/widgets/Stats.astro';
+import Layout from '~/layouts/PageLayout.astro';
+
+const metadata = {
+  title: 'Meet the Team — AJL Tech NJ',
+  description: 'Learn about Jorge Lamas and the AJL Tech NJ team. Professional technology support with years of experience in enterprise-level systems and North Jersey service.',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
+
+  <Hero
+    tagline="Our Team"
+    title="Meet the AJL Tech NJ Team"
+    subtitle="Professional technology experts dedicated to keeping your devices and networks running smoothly throughout North Jersey."
+    image={{
+      src: 'https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      alt: 'AJL Tech NJ Team',
+    }}
+  />
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    isReversed
+    items={[
+      {
+        title: 'Founder & Lead Technician',
+        description:
+          'Jorge founded AJL Tech NJ to bring enterprise-level technical expertise to North Jersey homes and businesses.',
+      },
+      {
+        title: 'Newark Airport Experience',
+        description:
+          'Years of managing critical systems for United Airlines at Newark Airport, handling everything from kiosks to scanners.',
+      },
+      {
+        title: 'Multi-Platform Expert',
+        description:
+          'Daily experience with Apple, Android, Microsoft, and proprietary systems in high-pressure, zero-downtime environments.',
+      },
+      {
+        title: 'Community Focused',
+        description:
+          'Committed to providing honest, reliable service to North Jersey families and businesses with clear communication and transparent pricing.',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
+      alt: 'Jorge Lamas - AJL Tech NJ Founder',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Jorge Lamas</h3>
+      <p class="text-muted mb-6">Founder & Lead Technician</p>
+      <p class="text-muted">
+        Born in Peru and driven by a passion for fixing things, Jorge brings years of hands-on experience working with enterprise-level technology systems at Newark Airport. His expertise spans everything from mobile device repairs to complex network installations, always with a focus on honest communication and reliable service.
+      </p>
+    </Fragment>
+  </Content>
+
+  <!-- Stats Widget ****************** -->
+
+  <Stats
+    title="Jorge's Professional Experience"
+    stats={[
+      { title: 'Years Experience', amount: '10+' },
+      { title: 'Devices Repaired', amount: '1000+' },
+      { title: 'Business Networks', amount: '85+' },
+      { title: 'Airport Systems Years', amount: '5+' },
+    ]}
+  />
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    title="Our Team"
+    subtitle="Ambitious tech professionals bringing enterprise experience to personal service"
+    items={[
+      {
+        title: 'Jacob Tapfar',
+        description: 'Tech enthusiast with enterprise field service experience, passionate about solving complex technology challenges.',
+        icon: 'tabler:user-cog',
+      },
+      {
+        title: 'Sergio Cisneros', 
+        description: 'Technology specialist with hands-on experience in enterprise systems and hardware troubleshooting.',
+        icon: 'tabler:user-cog',
+      },
+      {
+        title: 'Enterprise Background',
+        description: 'Our team brings enterprise-level technical skills to provide reliable, professional service for homes and businesses.',
+        icon: 'tabler:building',
+      },
+    ]}
+  >
+    <Fragment slot="content">
+      <p class="text-muted">
+        We're coworkers who share a passion for technology and wanted to create something meaningful outside the corporate world. Our enterprise experience with mission-critical systems gives us the skills to handle any tech challenge, while our entrepreneurial spirit drives us to provide exceptional personal service.
+      </p>
+    </Fragment>
+  </Content>
+
+  <!-- Features2 Widget ************** -->
+
+  <Features2
+    title="Our Service Approach"
+    subtitle="What sets AJL Tech NJ apart in the North Jersey technology service market"
+    columns={2}
+    items={[
+      {
+        title: 'Honest Communication',
+        description:
+          'We explain technical issues in plain language and provide transparent pricing with no hidden fees or technical jargon.',
+        icon: 'tabler:message-circle',
+      },
+      {
+        title: 'Enterprise-Level Skills',
+        description:
+          'Airport-grade technical expertise applied to home and business technology needs throughout North Jersey.',
+        icon: 'tabler:award',
+      },
+      {
+        title: 'Personal Relationships',
+        description:
+          'Every client is treated like family. We take time to understand your specific needs and build lasting relationships.',
+        icon: 'tabler:users',
+      },
+      {
+        title: 'Continuous Learning',
+        description:
+          'Technology constantly evolves, and we stay current through ongoing education and hands-on experience.',
+        icon: 'tabler:book',
+      },
+      {
+        title: 'Local Focus',
+        description:
+          'North Jersey based and focused, providing faster response times and personalized service to our community.',
+        icon: 'tabler:map-pin',
+      },
+      {
+        title: 'Quality Workmanship',
+        description:
+          'Every repair and installation is backed by our warranty and commitment to getting the job done right the first time.',
+        icon: 'tabler:shield-check',
+      },
+    ]}
+  />
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    isAfterContent
+    items={[
+      {
+        title: 'DecisionOne Background',
+        description:
+          'Years of hands-on experience maintaining United Airlines\' critical systems at Newark Airport taught Jorge the importance of reliability and quick problem-solving.',
+        icon: 'tabler:plane',
+      },
+      {
+        title: 'Multi-Cultural Perspective',
+        description:
+          'Born in Peru and now serving North Jersey, Jorge brings a global perspective and strong work ethic to every client interaction.',
+        icon: 'tabler:world',
+      },
+      {
+        title: 'Family Values',
+        description:
+          'As a married family man, Jorge understands the importance of technology in daily life and treats every client\'s problems as if they were his own.',
+        icon: 'tabler:home-heart',
+      },
+      {
+        title: 'Problem Solver',
+        description:
+          'Whether it\'s a cracked phone screen or a complex network issue, Jorge approaches every problem with patience and determination.',
+        icon: 'tabler:puzzle',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2084&q=80',
+      alt: 'Professional Technology Service',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Our Story</h3>
+      <p class="text-muted mb-6">
+        AJL Tech NJ was founded on the principle that professional technology support should be accessible, honest, and reliable. Jorge's journey from managing critical airport systems to serving North Jersey families and businesses reflects his commitment to bringing enterprise-level expertise to everyone who needs it.
+      </p>
+      <p class="text-muted">
+        When you choose AJL Tech NJ, you're not just getting a technician—you're getting a partner who understands that technology should work for you, not against you.
+      </p>
+    </Fragment>
+  </Content>
+
+  <!-- Features2 Widget ************** -->
+
+  <Features2
+    title="Why Choose AJL Tech NJ"
+    subtitle="The advantages of working with a local, experienced technology professional"
+    columns={3}
+    items={[
+      {
+        title: 'Rapid Response',
+        description: 'Local North Jersey service means faster response times and personal attention.',
+        icon: 'tabler:clock',
+      },
+      {
+        title: 'Proven Experience',
+        description: 'Years of experience with enterprise-level systems and consumer devices.',
+        icon: 'tabler:certificate',
+      },
+      {
+        title: 'Fair Pricing',
+        description: 'Transparent, competitive pricing with no hidden fees or surprise charges.',
+        icon: 'tabler:currency-dollar',
+      },
+      {
+        title: 'Personal Service',
+        description: 'Direct access to Jorge and personalized solutions for your specific needs.',
+        icon: 'tabler:user-check',
+      },
+      {
+        title: 'Ongoing Support',
+        description: 'Relationship-based service with follow-up support and ongoing assistance.',
+        icon: 'tabler:headset',
+      },
+      {
+        title: 'Quality Guarantee',
+        description: 'All work backed by our warranty and commitment to customer satisfaction.',
+        icon: 'tabler:thumb-up',
+      },
+    ]}
+  />
+
+  <!-- CallToAction Widget *********** -->
+
+  <CallToAction
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Contact Jorge',
+        href: '/contact',
+      },
+      {
+        variant: 'secondary',
+        text: 'View Services',
+        href: '/services',
+      },
+    ]}
+    title="Ready to Work with AJL Tech NJ?"
+    subtitle="Experience the difference of working with a dedicated technology professional who puts your needs first."
+  />
+</Layout>

@@ -1,0 +1,210 @@
+---
+import CallToAction from '~/components/widgets/CallToAction.astro';
+import Content from '~/components/widgets/Content.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import Steps from '~/components/widgets/Steps.astro';
+import Layout from '~/layouts/PageLayout.astro';
+
+const metadata = {
+  title: 'Network Engineering & IT Infrastructure — AJL Tech NJ',
+  description: 'Professional network design, installation, and management services for North Jersey businesses. Enterprise-grade networking solutions and ongoing support.',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
+
+  <Hero
+    tagline="Network Engineering"
+    title="Enterprise-Grade Network Solutions for Your Business"
+    subtitle="Professional network design, installation, and management services for North Jersey businesses. From small office networks to complex enterprise infrastructures."
+    actions={[{ variant: 'primary', target: '_self', text: 'Get Network Quote', href: '/contact' }]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1518709268805-4e9042af2176?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80',
+      alt: 'AJL Tech NJ Network Engineering',
+    }}
+  />
+
+  <!-- Features2 Widget ************** -->
+
+  <Features2
+    title="Professional Network Solutions"
+    subtitle="Design, install, and maintain robust network infrastructure for your business"
+    columns={2}
+    items={[
+      {
+        title: 'Network Design & Planning',
+        description:
+          'Custom network architecture designed for your business needs, scalability requirements, and future growth plans.',
+        icon: 'tabler:network',
+      },
+      {
+        title: 'Wired & Wireless Networks',
+        description:
+          'Professional installation of ethernet cabling, Wi-Fi systems, and hybrid networks with optimal coverage and performance.',
+        icon: 'tabler:wifi',
+      },
+      {
+        title: 'Server Infrastructure',
+        description:
+          'Server setup, configuration, and management including file servers, domain controllers, and virtualized environments.',
+        icon: 'tabler:server',
+      },
+      {
+        title: 'Network Security',
+        description:
+          'Firewall configuration, VPN setup, network monitoring, and security protocols to protect your business data.',
+        icon: 'tabler:shield-check',
+      },
+      {
+        title: 'VoIP Phone Systems',
+        description:
+          'Modern voice over IP phone systems with advanced features, cost savings, and seamless integration with your network.',
+        icon: 'tabler:phone',
+      },
+      {
+        title: 'Network Monitoring',
+        description:
+          '24/7 network monitoring, performance optimization, and proactive maintenance to prevent downtime and issues.',
+        icon: 'tabler:activity',
+      },
+    ]}
+  />
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    isReversed
+    items={[
+      {
+        title: 'Airport-Level Expertise',
+        description:
+          'Years of experience managing critical network infrastructure at Newark Airport brings enterprise-level expertise to your business.',
+        icon: 'tabler:plane',
+      },
+      {
+        title: 'Scalable Solutions',
+        description:
+          'Network designs that grow with your business, from small office setups to multi-location enterprise networks.',
+        icon: 'tabler:arrows-maximize',
+      },
+      {
+        title: 'Minimal Downtime',
+        description:
+          'Professional installation and configuration with careful planning to minimize business disruption during deployment.',
+        icon: 'tabler:clock',
+      },
+      {
+        title: 'Ongoing Support',
+        description:
+          'Comprehensive support plans including monitoring, maintenance, updates, and rapid response to network issues.',
+        icon: 'tabler:headset',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
+      alt: 'Professional Network Installation',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Why Choose Our Network Services</h3>
+    </Fragment>
+  </Content>
+
+  <!-- Steps Widget ****************** -->
+
+  <Steps
+    title="Network Implementation Process"
+    tagline="Professional Process"
+    items={[
+      {
+        title: 'Step 1: <span class="font-medium">Network Assessment</span>',
+        description:
+          'Comprehensive evaluation of your current network infrastructure, business requirements, and future growth plans.',
+        icon: 'tabler:clipboard-check',
+      },
+      {
+        title: 'Step 2: <span class="font-medium">Custom Design</span>',
+        description:
+          'Create detailed network diagrams and specifications tailored to your business needs, budget, and performance requirements.',
+        icon: 'tabler:pencil',
+      },
+      {
+        title: 'Step 3: <span class="font-medium">Professional Installation</span>',
+        description:
+          'Expert installation of all network components with proper cable management, documentation, and thorough testing.',
+        icon: 'tabler:tool',
+      },
+      {
+        title: 'Step 4: <span class="font-medium">Configuration & Testing</span>',
+        description:
+          'Complete network configuration, security setup, performance testing, and staff training on the new system.',
+        icon: 'tabler:settings',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
+      alt: 'Network Implementation Process',
+    }}
+  />
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    isAfterContent
+    items={[
+      {
+        title: 'Small Business Networks',
+        description:
+          'Affordable, reliable network solutions designed specifically for small businesses and growing companies.',
+        icon: 'tabler:building-store',
+      },
+      {
+        title: 'Enterprise Solutions',
+        description:
+          'Complex multi-site networks, redundancy planning, and enterprise-grade equipment for larger organizations.',
+        icon: 'tabler:building-skyscraper',
+      },
+      {
+        title: 'Cloud Integration',
+        description:
+          'Seamless integration with cloud services, hybrid cloud networks, and optimized internet connectivity.',
+        icon: 'tabler:cloud',
+      },
+      {
+        title: 'Performance Optimization',
+        description:
+          'Network tuning, bandwidth optimization, and Quality of Service (QoS) configuration for optimal performance.',
+        icon: 'tabler:rocket',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1544197150-b99a580bb7a8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
+      alt: 'Comprehensive Network Solutions',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Complete Network Solutions</h3>
+    </Fragment>
+  </Content>
+
+  <!-- CallToAction Widget *********** -->
+
+  <CallToAction
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Get Network Quote',
+        href: '/contact',
+      },
+      {
+        variant: 'secondary',
+        text: 'View All Services',
+        href: '/services',
+      },
+    ]}
+    title="Ready to Upgrade Your Network?"
+    subtitle="Contact AJL Tech NJ today for a comprehensive network assessment and custom quote for your business networking needs."
+  />
+</Layout>

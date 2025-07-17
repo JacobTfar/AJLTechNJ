@@ -1,0 +1,210 @@
+---
+import CallToAction from '~/components/widgets/CallToAction.astro';
+import Content from '~/components/widgets/Content.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import Steps from '~/components/widgets/Steps.astro';
+import Layout from '~/layouts/PageLayout.astro';
+
+const metadata = {
+  title: 'PC Imaging & System Deployment — AJL Tech NJ',
+  description: 'Professional PC imaging, system deployment, and mass installation services for North Jersey businesses. Custom OS images, software deployment, and fleet management.',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
+
+  <Hero
+    tagline="PC Imaging & Deployment"
+    title="Enterprise PC Imaging and System Deployment Services"
+    subtitle="Professional PC imaging, custom system deployment, and mass installation services for North Jersey businesses. Streamline your IT operations with standardized, secure system images."
+    actions={[{ variant: 'primary', target: '_self', text: 'Get Imaging Quote', href: '/contact' }]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80',
+      alt: 'AJL Tech NJ PC Imaging Services',
+    }}
+  />
+
+  <!-- Features2 Widget ************** -->
+
+  <Features2
+    title="Professional PC Imaging Solutions"
+    subtitle="Streamline your IT operations with custom system images and automated deployment"
+    columns={2}
+    items={[
+      {
+        title: 'Custom System Images',
+        description:
+          'Create standardized system images with your required operating system, software, settings, and security configurations.',
+        icon: 'tabler:copy',
+      },
+      {
+        title: 'Mass Deployment',
+        description:
+          'Deploy identical system configurations to multiple computers simultaneously, saving time and ensuring consistency.',
+        icon: 'tabler:devices',
+      },
+      {
+        title: 'Software Packaging',
+        description:
+          'Pre-install and configure all required business software, updates, and custom applications in your system images.',
+        icon: 'tabler:package',
+      },
+      {
+        title: 'Security Hardening',
+        description:
+          'Implement security policies, antivirus software, firewall configurations, and compliance requirements in base images.',
+        icon: 'tabler:shield-lock',
+      },
+      {
+        title: 'Driver Integration',
+        description:
+          'Include all necessary hardware drivers and ensure compatibility across different computer models and configurations.',
+        icon: 'tabler:cpu',
+      },
+      {
+        title: 'Asset Management',
+        description:
+          'Track and manage deployed systems with detailed documentation, serial numbers, and configuration records.',
+        icon: 'tabler:clipboard-list',
+      },
+    ]}
+  />
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    isReversed
+    items={[
+      {
+        title: 'Airport-Grade Standards',
+        description:
+          'Drawing from experience managing critical UAL systems at Newark Airport, we apply enterprise-level imaging standards to your business.',
+        icon: 'tabler:plane',
+      },
+      {
+        title: 'Time Efficiency',
+        description:
+          'Reduce new computer setup time from hours to minutes with pre-configured images that include all your business requirements.',
+        icon: 'tabler:clock',
+      },
+      {
+        title: 'Consistency & Reliability',
+        description:
+          'Ensure every computer in your organization has the same configuration, reducing support issues and training requirements.',
+        icon: 'tabler:repeat',
+      },
+      {
+        title: 'Version Control',
+        description:
+          'Maintain multiple image versions for different departments, roles, or hardware configurations with proper documentation.',
+        icon: 'tabler:versions',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
+      alt: 'Professional PC Imaging',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Why Choose Our Imaging Services</h3>
+    </Fragment>
+  </Content>
+
+  <!-- Steps Widget ****************** -->
+
+  <Steps
+    title="PC Imaging Process"
+    tagline="Professional Process"
+    items={[
+      {
+        title: 'Step 1: <span class="font-medium">Requirements Analysis</span>',
+        description:
+          'Analyze your business requirements, software needs, security policies, and hardware inventory to design optimal system images.',
+        icon: 'tabler:clipboard-check',
+      },
+      {
+        title: 'Step 2: <span class="font-medium">Image Creation</span>',
+        description:
+          'Build and test custom system images with all required software, configurations, and security settings for your organization.',
+        icon: 'tabler:camera',
+      },
+      {
+        title: 'Step 3: <span class="font-medium">Testing & Validation</span>',
+        description:
+          'Thoroughly test images on sample hardware to ensure compatibility, performance, and functionality before mass deployment.',
+        icon: 'tabler:flask',
+      },
+      {
+        title: 'Step 4: <span class="font-medium">Deployment & Support</span>',
+        description:
+          'Deploy images to your computer fleet with detailed documentation and ongoing support for updates and modifications.',
+        icon: 'tabler:rocket',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
+      alt: 'PC Imaging Process',
+    }}
+  />
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    isAfterContent
+    items={[
+      {
+        title: 'Windows Deployment',
+        description:
+          'Expertise in Windows 10/11 enterprise deployment, domain integration, and Group Policy configuration.',
+        icon: 'tabler:brand-windows',
+      },
+      {
+        title: 'Multi-Platform Support',
+        description:
+          'Support for Windows, macOS, and Linux system images depending on your business requirements.',
+        icon: 'tabler:devices-pc',
+      },
+      {
+        title: 'Remote Deployment',
+        description:
+          'Network-based imaging solutions for remote deployment without physical access to each computer.',
+        icon: 'tabler:wifi',
+      },
+      {
+        title: 'Ongoing Maintenance',
+        description:
+          'Regular image updates, security patches, and software updates to keep your system images current and secure.',
+        icon: 'tabler:refresh',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
+      alt: 'Comprehensive Imaging Solutions',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Complete Deployment Solutions</h3>
+    </Fragment>
+  </Content>
+
+  <!-- CallToAction Widget *********** -->
+
+  <CallToAction
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Get Imaging Quote',
+        href: '/contact',
+      },
+      {
+        variant: 'secondary',
+        text: 'View All Services',
+        href: '/services',
+      },
+    ]}
+    title="Ready to Streamline Your IT Deployment?"
+    subtitle="Contact AJL Tech NJ today to discuss your PC imaging and system deployment needs. Save time and ensure consistency across your organization."
+  />
+</Layout>

@@ -1,0 +1,210 @@
+---
+import CallToAction from '~/components/widgets/CallToAction.astro';
+import Content from '~/components/widgets/Content.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import Steps from '~/components/widgets/Steps.astro';
+import Layout from '~/layouts/PageLayout.astro';
+
+const metadata = {
+  title: 'Security Systems & IT Security — AJL Tech NJ',
+  description: 'Professional security camera installation, network security, and IT security services for North Jersey homes and businesses. Protect your property and data.',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
+
+  <Hero
+    tagline="Security Systems"
+    title="Comprehensive Security Solutions for Your Peace of Mind"
+    subtitle="Professional security camera installation, network security, and IT security services for North Jersey. Protect your property, data, and loved ones with enterprise-grade security systems."
+    actions={[{ variant: 'primary', target: '_self', text: 'Get Security Quote', href: '/contact' }]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80',
+      alt: 'AJL Tech NJ Security Systems',
+    }}
+  />
+
+  <!-- Features2 Widget ************** -->
+
+  <Features2
+    title="Complete Security Solutions"
+    subtitle="Protect your property and digital assets with professional security systems"
+    columns={2}
+    items={[
+      {
+        title: 'Security Camera Systems',
+        description:
+          'Professional CCTV installation with high-definition cameras, night vision, and remote monitoring capabilities. Indoor and outdoor solutions available.',
+        icon: 'tabler:video',
+      },
+      {
+        title: 'Network Security',
+        description:
+          'Firewall configuration, VPN setup, and network monitoring to protect your business data from cyber threats and unauthorized access.',
+        icon: 'tabler:shield-lock',
+      },
+      {
+        title: 'Access Control Systems',
+        description:
+          'Keycard systems, biometric scanners, and smart locks for controlling physical access to your premises with detailed activity logs.',
+        icon: 'tabler:key',
+      },
+      {
+        title: 'Alarm Systems',
+        description:
+          'Burglar alarms, motion detectors, and 24/7 monitoring systems connected to your smartphone for instant alerts and notifications.',
+        icon: 'tabler:bell',
+      },
+      {
+        title: 'Data Protection',
+        description:
+          'Encrypted backup systems, secure file storage, and data recovery solutions to protect your critical business information.',
+        icon: 'tabler:database',
+      },
+      {
+        title: 'Security Audits',
+        description:
+          'Comprehensive security assessments of your physical and digital infrastructure with detailed recommendations for improvements.',
+        icon: 'tabler:search',
+      },
+    ]}
+  />
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    isReversed
+    items={[
+      {
+        title: 'Airport-Grade Security',
+        description:
+          'Drawing from years of experience securing critical United Airlines systems at Newark Airport, we bring enterprise-level security to your business.',
+        icon: 'tabler:plane',
+      },
+      {
+        title: 'Custom Solutions',
+        description:
+          'Every security system is tailored to your specific needs, property layout, and budget requirements.',
+        icon: 'tabler:settings',
+      },
+      {
+        title: 'Professional Installation',
+        description:
+          'Clean, professional installation with hidden wiring and strategic camera placement for maximum coverage.',
+        icon: 'tabler:tool',
+      },
+      {
+        title: 'Ongoing Support',
+        description:
+          'Regular maintenance, system updates, and 24/7 technical support to keep your security systems running optimally.',
+        icon: 'tabler:headset',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
+      alt: 'Professional Security Installation',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Why Choose Our Security Services</h3>
+    </Fragment>
+  </Content>
+
+  <!-- Steps Widget ****************** -->
+
+  <Steps
+    title="Security System Installation Process"
+    tagline="Professional Process"
+    items={[
+      {
+        title: 'Step 1: <span class="font-medium">Security Assessment</span>',
+        description:
+          'We conduct a thorough security assessment of your property to identify vulnerabilities and recommend the best security solutions.',
+        icon: 'tabler:clipboard-check',
+      },
+      {
+        title: 'Step 2: <span class="font-medium">Custom Design</span>',
+        description:
+          'Design a custom security system that meets your specific needs, budget, and provides optimal coverage for your property.',
+        icon: 'tabler:ruler',
+      },
+      {
+        title: 'Step 3: <span class="font-medium">Professional Installation</span>',
+        description:
+          'Expert installation with clean wiring, proper camera positioning, and thorough testing of all system components.',
+        icon: 'tabler:hammer',
+      },
+      {
+        title: 'Step 4: <span class="font-medium">Training & Support</span>',
+        description:
+          'Complete system training and ongoing support to ensure you get the maximum benefit from your security investment.',
+        icon: 'tabler:school',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1504639725590-34d0984388bd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
+      alt: 'Security Installation Process',
+    }}
+  />
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    isAfterContent
+    items={[
+      {
+        title: 'Home Security',
+        description:
+          'Protect your family and property with residential security systems designed for maximum protection and peace of mind.',
+        icon: 'tabler:home',
+      },
+      {
+        title: 'Business Security',
+        description:
+          'Comprehensive commercial security solutions including access control, surveillance, and network security for businesses.',
+        icon: 'tabler:building',
+      },
+      {
+        title: 'Remote Monitoring',
+        description:
+          'View your security cameras and receive alerts from anywhere using your smartphone, tablet, or computer.',
+        icon: 'tabler:device-mobile',
+      },
+      {
+        title: 'Compliance Ready',
+        description:
+          'Security systems designed to meet industry compliance requirements and insurance standards for your business.',
+        icon: 'tabler:certificate',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1586281380117-5a60ae2050cc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
+      alt: 'Comprehensive Security Solutions',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Complete Security Coverage</h3>
+    </Fragment>
+  </Content>
+
+  <!-- CallToAction Widget *********** -->
+
+  <CallToAction
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Get Security Quote',
+        href: '/contact',
+      },
+      {
+        variant: 'secondary',
+        text: 'View All Services',
+        href: '/services',
+      },
+    ]}
+    title="Ready to Secure Your Property?"
+    subtitle="Contact AJL Tech NJ today for a free security assessment and custom quote for your home or business security needs."
+  />
+</Layout>

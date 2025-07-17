@@ -1,0 +1,184 @@
+---
+import CallToAction from '~/components/widgets/CallToAction.astro';
+import FAQs from '~/components/widgets/FAQs.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import Layout from '~/layouts/PageLayout.astro';
+
+const metadata = {
+  title: 'Frequently Asked Questions — AJL Tech NJ',
+  description: 'Get answers to common questions about our tech support services, pricing, repairs, and policies in North Jersey.',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
+
+  <Hero
+    tagline="FAQ"
+    title="Frequently Asked Questions"
+    subtitle="Get answers to common questions about our tech support services, device repairs, and policies. Can't find what you're looking for? Contact us directly."
+  />
+
+  <!-- FAQs Widget ******************* -->
+
+  <FAQs
+    title="General Service Questions"
+    subtitle="Learn about our services and how we can help with your technology needs"
+    tagline="Services"
+    classes={{ container: 'max-w-6xl' }}
+    items={[
+      {
+        title: 'What areas do you serve in North Jersey?',
+        description:
+          'We provide services throughout North Jersey including Essex, Hudson, Bergen, Passaic, Union, and Morris counties. We offer both on-site visits and remote support depending on your needs.',
+      },
+      {
+        title: 'Do you offer emergency or same-day service?',
+        description:
+          'Yes! We understand that technology problems can\'t always wait. We offer same-day emergency service for critical business issues at our standard rates. Contact us as soon as possible for urgent needs.',
+      },
+      {
+        title: 'What types of devices do you repair?',
+        description:
+          'We repair smartphones (iPhone and Android), tablets (iPad and Android tablets), laptops, desktop computers, gaming devices, and various peripherals. If it\'s electronic and broken, we can probably help.',
+      },
+      {
+        title: 'How long do repairs typically take?',
+        description:
+          'Most device repairs are completed within 24-48 hours. Simple repairs like screen replacements can often be done the same day. Complex issues may take longer, but we\'ll give you a clear timeline upfront.',
+      },
+      {
+        title: 'Do you provide free estimates?',
+        description:
+          'Yes, we provide free diagnostic assessments for all device repairs and tech support consultations. You\'ll know exactly what the issue is and what it will cost before we do any work.',
+      },
+      {
+        title: 'Can you help with both Windows and Mac computers?',
+        description:
+          'Absolutely! Our technicians are certified to work with Windows, macOS, and various Linux distributions. We support all major operating systems and hardware brands.',
+      },
+    ]}
+  />
+
+  <!-- FAQs Widget ******************* -->
+
+  <FAQs
+    title="Pricing & Warranty"
+    subtitle="Transparent pricing and warranty information for our services"
+    tagline="Pricing"
+    classes={{ container: 'max-w-6xl' }}
+    items={[
+      {
+        title: 'How much do your services cost?',
+        description:
+          'Remote support sessions start at $75, on-site visits start at $125. Device repair pricing varies by device and issue. We always provide a free estimate before beginning any work, so there are never any surprises.',
+      },
+      {
+        title: 'Do you offer warranties on repairs?',
+        description:
+          'Yes! All device repairs come with a 30-day warranty covering both parts and labor. If the same issue occurs within 30 days, we\'ll fix it at no additional charge.',
+      },
+      {
+        title: 'What payment methods do you accept?',
+        description:
+          'We accept cash, check, and all major credit cards. For business clients, we can also arrange NET-30 payment terms with approved credit.',
+      },
+      {
+        title: 'Are there any hidden fees?',
+        description:
+          'No hidden fees ever. Our pricing is completely transparent. The estimate we provide is exactly what you\'ll pay, unless you approve additional work that we discover during the repair process.',
+      },
+      {
+        title: 'Do you offer discounts for businesses or multiple devices?',
+        description:
+          'Yes, we offer volume discounts for businesses and customers with multiple devices. Contact us to discuss custom pricing for your specific needs.',
+      },
+    ]}
+  />
+
+  <!-- FAQs Widget ******************* -->
+
+  <FAQs
+    title="Technical Support"
+    subtitle="Information about our remote and on-site technical support services"
+    tagline="Support"
+    classes={{ container: 'max-w-6xl' }}
+    items={[
+      {
+        title: 'How does remote support work?',
+        description:
+          'We use secure remote access software to connect to your computer over the internet. You\'ll see everything we\'re doing on your screen, and we can only access your computer when you explicitly allow it. It\'s safe, secure, and often faster than on-site visits.',
+      },
+      {
+        title: 'What if you can\'t fix my problem remotely?',
+        description:
+          'If we can\'t resolve your issue remotely, we\'ll schedule an on-site visit. We\'ll apply the remote support fee toward the on-site service, so you\'re not paying twice.',
+      },
+      {
+        title: 'Do you provide ongoing IT support for businesses?',
+        description:
+          'Yes! We offer managed IT services including proactive monitoring, regular maintenance, security updates, and priority support. Contact us to discuss a custom support plan for your business.',
+      },
+      {
+        title: 'Can you help set up new computers or networks?',
+        description:
+          'Absolutely. We handle complete computer setups, network installations, Wi-Fi optimization, security system installations, and even complex business network deployments. No job is too big or too small.',
+      },
+      {
+        title: 'What about data backup and recovery?',
+        description:
+          'We provide comprehensive data backup solutions and emergency data recovery services. Whether you need to set up automated backups or recover files from a crashed drive, we can help protect your important information.',
+      },
+    ]}
+  />
+
+  <!-- FAQs Widget ******************* -->
+
+  <FAQs
+    title="Getting Started"
+    subtitle="Ready to get help with your technology? Here's how to get started"
+    tagline="Contact"
+    classes={{ container: 'max-w-6xl' }}
+    items={[
+      {
+        title: 'How do I schedule service?',
+        description:
+          'Simply call us, email, or use our contact form. We\'ll discuss your issue, determine whether remote or on-site service is best, and schedule a convenient time. Most appointments can be scheduled within 24-48 hours.',
+      },
+      {
+        title: 'What should I prepare before you arrive?',
+        description:
+          'For on-site visits, just ensure we have access to the problem device and any relevant passwords. For remote support, make sure you have a stable internet connection. We\'ll guide you through everything else.',
+      },
+      {
+        title: 'What if I\'m not very tech-savvy?',
+        description:
+          'Don\'t worry! We specialize in explaining technical issues in plain language and walking you through everything step by step. Many of our clients aren\'t tech experts—that\'s exactly why we\'re here to help.',
+      },
+      {
+        title: 'Do you work evenings or weekends?',
+        description:
+          'Yes, we offer flexible scheduling including evenings and weekends for an additional fee. We understand that technology problems don\'t follow business hours, especially for busy professionals.',
+      },
+    ]}
+  />
+
+  <!-- CallToAction Widget *********** -->
+
+  <CallToAction
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Contact Us',
+        href: '/contact',
+      },
+      {
+        variant: 'secondary',
+        text: 'View Services',
+        href: '/services',
+      },
+    ]}
+    title="Still Have Questions?"
+    subtitle="Can't find the answer you're looking for? Get in touch with AJL Tech NJ and we'll be happy to help."
+  />
+</Layout>

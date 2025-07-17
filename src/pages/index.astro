@@ -13,7 +13,8 @@ import Stats from '~/components/widgets/Stats.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 
 const metadata = {
-  title: 'AstroWind — Free template for creating websites with Astro + Tailwind CSS',
+  title: 'AJL Tech NJ — Trusted Tech Support for Homes and Businesses',
+  description: 'On-site and remote support, device repairs, security installs, and custom network solutions built for North Jersey.',
   ignoreTitleTemplate: true,
 };
 ---
@@ -25,78 +26,76 @@ const metadata = {
     actions={[
       {
         variant: 'primary',
-        text: 'Get template',
-        href: 'https://github.com/onwidget/astrowind',
-        target: '_blank',
-        icon: 'tabler:download',
+        text: 'Request Service',
+        href: '/contact',
+        target: '_self',
+        icon: 'tabler:message',
       },
-      { text: 'Learn more', href: '#features' },
+      { text: 'Explore Services', href: '#features' },
     ]}
-    image={{ src: '~/assets/images/hero-image.png', alt: 'AstroWind Hero Image' }}
+    image={{ src: 'https://images.unsplash.com/photo-1588508065123-287b28e013da?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2006&q=80', alt: 'AJL Tech NJ Professional Services' }}
   >
     <Fragment slot="title">
-      Free template for <span class="hidden xl:inline">creating websites with</span>
-      <span class="text-accent dark:text-white"> Astro 5.0</span> + Tailwind CSS
+      Reliable Tech Solutions in <span class="hidden xl:inline">North Jersey</span>
+      <span class="text-accent dark:text-white"> Homes & Businesses</span>
     </Fragment>
 
     <Fragment slot="subtitle">
       <span class="hidden sm:inline">
-        <span class="font-semibold">AstroWind</span> is a free, customizable and production-ready template for Astro 5.0
-        + Tailwind CSS.</span
+        <span class="font-semibold">AJL Tech NJ</span> offers personalized tech support, device repairs, network setup, and secure camera installs — fast, local, and friendly.</span
       >
-      <span class="block mb-1 sm:hidden font-bold text-blue-600">AstroWind: Production-ready.</span>
-      Suitable for Startups, Small Business, SaaS websites, Professional Portfolios, Marketing websites, Landing Pages &
-      Blogs.
+      <span class="block mb-1 sm:hidden font-bold text-blue-600">AJL Tech NJ: Fast. Local. Friendly.</span>
+      From emergency computer fixes to complete network overhauls - we keep your technology running smoothly.
     </Fragment>
   </Hero>
 
   <!-- Note Widget ******************* -->
 
-  <Note title="Philosophy:" description="Simplicity, Best Practices and High Performance" />
+  <Note title="Service Area:" description="Proudly serving North Jersey with professional tech support and device repairs" />
 
   <!-- Features Widget *************** -->
 
   <Features
     id="features"
-    tagline="Features"
-    title="What you get with AstroWind"
-    subtitle="One of the most professional and comprehensive templates currently on the market. Most starred & forked Astro theme in 2022, 2023 and 2024."
+    tagline="Our Services"
+    title="Professional Tech Solutions You Can Trust"
+    subtitle="From mobile device repairs to network optimization, AJL Tech NJ provides comprehensive technology support for North Jersey homes and businesses."
     items={[
       {
-        title: 'Astro + Tailwind CSS Integration',
+        title: 'Mobile Device Repairs',
         description:
-          'A seamless integration between two great frameworks that offer high productivity, performance and versatility.',
-        icon: 'tabler:brand-tailwind',
+          'Expert repair services for iPhone and Android devices. Screen replacements, battery issues, water damage recovery, and more with warranty included.',
+        icon: 'tabler:device-mobile',
       },
       {
-        title: 'Ready-to-use Components',
+        title: 'Computer & Laptop Support',
         description:
-          'Widgets made with Tailwind CSS ready to be used in Marketing Websites, SaaS, Blogs, Personal Profiles, Small Business...',
-        icon: 'tabler:components',
+          'Comprehensive computer repair, virus removal, data recovery, performance optimization, and hardware troubleshooting services.',
+        icon: 'tabler:device-laptop',
       },
       {
-        title: 'Best Practices',
+        title: 'Network Setup & Optimization',
         description:
-          'Creating secure, efficient, and user-friendly websites that deliver exceptional experiences and lasting value.',
-        icon: 'tabler:list-check',
+          'Professional network configuration, Wi-Fi optimization, router setup, and custom LAN builds backed by UAL-certified expertise.',
+        icon: 'tabler:network',
       },
       {
-        title: 'Excellent Page Speed',
+        title: 'Security System Installation',
         description:
-          'Having a good page speed impacts organic search ranking, improves user experience (UI/UX) and increase conversion rates.',
-        icon: 'tabler:rocket',
+          'Basic security camera setup and configuration for home and office protection. Advanced installations through certified partners.',
+        icon: 'tabler:shield-check',
       },
       {
-        title: 'Search Engine Optimization (SEO)',
+        title: 'Tech Support & Troubleshooting',
         description:
-          "SEO lies in its ability to enhance a website's visibility, driving organic traffic and enabling it to reach a wider audience.",
-        icon: 'tabler:arrows-right-left',
+          'Remote and on-site technical support for all your technology needs. Software installation, printer setup, and smart device configuration.',
+        icon: 'tabler:headset',
       },
       {
-        title: 'Open to new ideas and contributions',
+        title: 'Custom Tech Solutions',
         description:
-          'Embracing a culture that is open to new ideas and contributions is integral fostering innovation, collaboration, and a dynamic user experience.',
-        icon: 'tabler:bulb',
+          'Tailored technology solutions for unique business needs. PC imaging, multi-system setup, and productivity enhancement systems.',
+        icon: 'tabler:settings',
       },
     ]}
   />
@@ -105,33 +104,33 @@ const metadata = {
 
   <Content
     isReversed
-    tagline="Inside template"
-    title="AstroWind's Blueprint: Fun Meets Functionality!"
+    tagline="Why Choose AJL Tech NJ"
+    title="Local Expertise You Can Count On"
     items={[
       {
-        title: 'Built on top of Astro 5.0',
+        title: 'North Jersey Based',
         description:
-          'Benefiting from the performance and developer-friendly features of this modern static site generator.',
+          'Local service means faster response times, personalized support, and a tech expert who understands your community.',
       },
       {
-        title: 'Styled using Tailwind CSS',
+        title: 'Certified & Experienced',
         description:
-          'Facilitating rapid design and consistent styling with this highly popular utility-first CSS framework.',
+          'UAL-certified network expertise combined with years of hands-on experience in device repairs and tech support.',
       },
       {
-        title: 'Cross-browser compatibility',
+        title: 'Transparent Pricing',
         description:
-          'Ensure your website looks and functions consistently across various web browsers, delivering a seamless experience to all users.',
+          'Clear, upfront pricing with no hidden fees. Free estimates and warranty included on all repair services.',
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      alt: 'Colorful Image',
+      src: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      alt: 'Professional Tech Support',
     }}
   >
     <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Building on modern foundations</h3>
-      Gain a competitive advantage by incorporating industry leading practices
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Professional Service, Local Trust</h3>
+      Experience the difference of working with a local tech expert who puts your needs first
     </Fragment>
 
     <Fragment slot="bg">
@@ -145,31 +144,34 @@ const metadata = {
     isAfterContent
     items={[
       {
-        title: 'High level of customization',
-        description: `Tailor the template effortlessly to match your brand's identity and requirements, making your website distinct and saving you time.`,
+        title: 'Quick Response Times',
+        description: 'Same-day or next-day service for most issues. Emergency support available for critical business needs.',
       },
       {
-        title: 'Multiple layout possibilities',
+        title: 'Warranty on All Repairs',
         description:
-          'Explore various layout options to find the structure that best presents your content, enhancing user engagement and navigation.',
+          'All device repairs come with a 30-day warranty on parts and labor. We stand behind our work.',
       },
       {
-        title: 'Fully responsive design',
+        title: 'No Hidden Fees',
         description:
-          "Ensure your website's optimal performance on various devices and screen sizes, providing a consistent and enjoyable user experience.",
+          'Transparent pricing with free estimates. You know exactly what you\'ll pay before any work begins.',
       },
       {
-        title: 'Integration of media',
+        title: 'Follow-up Support',
         description:
-          'Seamlessly incorporate images, videos, and multimedia elements that enhance your content and engage visitors effectively.',
+          'We don\'t disappear after the job is done. Ongoing support ensures your technology keeps working perfectly.',
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1600132806370-bf17e65e942f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2194&q=80',
-      alt: 'Blueprint Image',
+      src: 'https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2194&q=80',
+      alt: 'Professional Tech Service',
     }}
   >
-    <Fragment slot="content">Ensure your online presence truly represents you.</Fragment>
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Service You Can Count On</h3>
+      Experience reliable tech support that puts your needs first
+    </Fragment>
 
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
@@ -183,31 +185,34 @@ const metadata = {
     isAfterContent
     items={[
       {
-        title: 'Enhanced user engagement',
+        title: 'Local North Jersey Expertise',
         description:
-          'Captivate your audience with interactive elements, intuitive navigation, and visually appealing layouts, encouraging longer visits.',
+          'We understand the unique tech challenges of North Jersey homes and businesses. Local service means faster response and personalized solutions.',
       },
       {
-        title: 'Continuous improvement',
+        title: 'UAL-Certified Network Support',
         description:
-          'Ensure your website stays aligned with the latest trends and technologies through regular updates and enhancements.',
+          'Professional network engineering backed by UAL certification. Trust your connectivity to experienced hands.',
       },
       {
-        title: 'Time and resource efficiency',
+        title: 'Complete Device Repair Services',
         description:
-          'Skip the time-consuming process of building a website from scratch and launch your online presence sooner with AstroWind.',
+          'From cracked iPhone screens to laptop boot issues, we handle repairs for all major brands with genuine parts and warranties.',
       },
       {
-        title: 'Community support',
-        description: `Join the growing AstroWind community for insights, resources, and assistance, ensuring you're never alone on your web development journey.`,
+        title: 'Security & Privacy Focused',
+        description: 'Camera installations and network setups designed with your privacy and security as top priorities.',
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1611462985358-60d3498e0364?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      alt: 'Astronauts Image',
+      src: 'https://images.unsplash.com/photo-1556075798-4825dfaaf498?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      alt: 'Technology Solutions',
     }}
   >
-    <Fragment slot="content">Designed to foster growth and success.</Fragment>
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Built for Success</h3>
+      Technology solutions designed to enhance your productivity and peace of mind
+    </Fragment>
 
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
@@ -217,93 +222,80 @@ const metadata = {
   <!-- Steps Widget ****************** -->
 
   <Steps
-    title="Get your dream website up and running in no time with AstroWind."
+    title="How We Support Your Technology Needs"
+    tagline="Simple Process"
     items={[
       {
-        title: 'Step 1: <span class="font-medium">Download</span>',
+        title: 'Step 1: <span class="font-medium">Contact Us</span>',
         description:
-          "Kickstart with GitHub! Either fork the AstroWind template or simply click 'Use this template'. Your canvas awaits, ready for your digital masterpiece. In just a few clicks, you've already set the foundation.",
-        icon: 'tabler:package',
+          'Reach out via phone, email, or our contact form. Describe your tech issue or service needs and we\'ll provide a free initial consultation.',
+        icon: 'tabler:phone',
       },
       {
-        title: 'Step 2: <span class="font-medium">Add content</span>',
+        title: 'Step 2: <span class="font-medium">Get Free Estimate</span>',
         description:
-          "Pour your vision into it. Add images, text, and all that jazz to breathe life into your digital space. Remember, it's the content that tells your story, so make it captivating.",
-        icon: 'tabler:letter-case',
+          'We\'ll assess your needs and provide a clear, upfront estimate with no hidden fees. You\'ll know exactly what to expect before any work begins.',
+        icon: 'tabler:file-dollar',
       },
       {
-        title: 'Step 3: <span class="font-medium">Customize styles</span>',
+        title: 'Step 3: <span class="font-medium">Professional Service</span>',
         description:
-          'Give it your personal touch. Tailor colors, fonts, and layouts until it feels just right. Your unique flair, amplified by AstroWind! Precision in design ensures a seamless user experience.',
-        icon: 'tabler:paint',
+          'Our certified technicians provide expert service at your location or remotely. We work efficiently while keeping you informed throughout the process.',
+        icon: 'tabler:tools',
       },
       {
-        title: 'Ready!',
+        title: 'Ongoing Support',
+        description:
+          'Enjoy continued support with warranty coverage and follow-up assistance to ensure your technology keeps working perfectly.',
         icon: 'tabler:check',
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1616198814651-e71f960c3180?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80',
-      alt: 'Steps image',
+      src: 'https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80',
+      alt: 'Tech Support Process',
     }}
   />
 
   <!-- Features2 Widget ************** -->
 
   <Features2
-    title="Most used widgets"
-    subtitle="Provides frequently used components for building websites using Tailwind CSS"
-    tagline="Components"
+    title="Core Service Areas"
+    subtitle="Comprehensive tech support solutions for North Jersey"
+    tagline="What We Do"
     items={[
       {
-        title: 'Headers',
-        description: "Ever tried driving without GPS? Boom! That's why websites need headers for direction.",
-        icon: 'flat-color-icons:template',
+        title: 'Tech Support',
+        description: 'Remote and on-site troubleshooting for all your technology needs.',
+        icon: 'tabler:headset',
       },
       {
-        title: 'Heros',
+        title: 'Security Systems',
         description:
-          "Picture a superhero landing – epic, right? That's the job of a Hero section, making grand entrances!",
-        icon: 'flat-color-icons:gallery',
+          'Privacy-conscious camera setups and basic security installations for home and office.',
+        icon: 'tabler:shield-check',
       },
       {
-        title: 'Features',
+        title: 'Network Solutions',
         description:
-          'Where websites strut their stuff and show off superpowers. No holding back on the bragging rights here!',
-        icon: 'flat-color-icons:approval',
+          'Router setup, Wi-Fi optimization, and custom LAN configurations for better connectivity.',
+        icon: 'tabler:network',
       },
       {
-        title: 'Content',
+        title: 'Device Repairs',
         description:
-          "Dive into the meat and potatoes of a site; without it, you'd just be window shopping. Content is king.",
-        icon: 'flat-color-icons:document',
+          'Professional repair services for phones, tablets, and computers with warranty coverage.',
+        icon: 'tabler:tool',
       },
       {
-        title: 'Call-to-Action',
+        title: 'PC Imaging',
+        description: 'Cloned profiles, clean OS setups, and multi-system deployment for businesses.',
+        icon: 'tabler:copy',
+      },
+      {
+        title: 'Smart Home Setup',
         description:
-          'That enthusiastic friend who\'s always urging, "Do it! Do it!"? Yeah, that\'s this button nudging you towards adventure.',
-        icon: 'flat-color-icons:advertising',
-      },
-      {
-        title: 'Pricing',
-        description: 'Behold the dessert menu of the website world. Tempting choices await, can you resist?',
-        icon: 'flat-color-icons:currency-exchange',
-      },
-      {
-        title: 'Testimonial',
-        description: 'Step into the gossip corner! Here, other visitors spill the beans and share the juicy details.',
-        icon: 'flat-color-icons:voice-presentation',
-      },
-      {
-        title: 'Contact',
-        description:
-          'Like a digital mailbox, but faster! Drop a line, ask a question, or send a virtual high-five. Ding! Message in.',
-        icon: 'flat-color-icons:business-contact',
-      },
-      {
-        title: 'Footers',
-        description: "The footer's like the credits of a movie but sprinkled with easter eggs. Time to hunt!",
-        icon: 'flat-color-icons:database',
+          'Configuration and integration of smart devices for modern, connected living.',
+        icon: 'tabler:smart-home',
       },
     ]}
   >
@@ -315,25 +307,22 @@ const metadata = {
   <!-- HighlightedPosts Widget ******* -->
 
   <BlogLatestPosts
-    title="Find out more content in our Blog"
-    information={`The blog is used to display AstroWind documentation.
-                        Each new article will be an important step that you will need to know to be an expert in creating a website using Astro + Tailwind CSS.
-                        Astro is a very interesting technology. Thanks.
-                `}
+    title="Tech Tips & Service Updates"
+    information="Stay informed with helpful tech tips, service updates, and insights from our team. Learn how to keep your technology running smoothly and discover new ways to enhance your digital experience."
   />
 
   <!-- FAQs Widget ******************* -->
 
   <FAQs
     title="Frequently Asked Questions"
-    subtitle="Dive into the following questions to gain insights into the powerful features that AstroWind offers and how it can elevate your web development journey."
+    subtitle="Common questions about our tech support services and policies"
     tagline="FAQs"
     classes={{ container: 'max-w-6xl' }}
     items={[
       {
-        title: 'Why AstroWind?',
+        title: 'Do I need to buy equipment before contacting you?',
         description:
-          "Michael Knight a young loner on a crusade to champion the cause of the innocent. The helpless. The powerless in a world of criminals who operate above the law. Here he comes Here comes Speed Racer. He's a demon on wheels.",
+          'No! We can assess your needs first and recommend the right equipment. We often have preferred suppliers and can help you get better deals on hardware.',
       },
       {
         title: 'What do I need to start?',
@@ -341,24 +330,24 @@ const metadata = {
           'Space, the final frontier. These are the voyages of the Starship Enterprise. Its five-year mission: to explore strange new worlds. Many say exploration is part of our destiny, but it’s actually our duty to future generations.',
       },
       {
-        title: 'How to install the Astro + Tailwind CSS template?',
+        title: 'Do you offer warranty or follow-up visits?',
         description:
-          "Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows.",
+          'Absolutely! All repairs come with a 30-day warranty, and we provide follow-up support to ensure everything continues working properly. We\'re here for ongoing assistance.',
       },
       {
-        title: "What's something that you don't understand?",
+        title: 'Can you help with both Windows and Mac computers?',
         description:
-          "A flower in my garden, a mystery in my panties. Heart attack never stopped old Big Bear. I didn't even know we were calling him Big Bear.",
+          'Yes, we support both Windows and Mac systems, as well as various Linux distributions. Our technicians are cross-platform certified.',
       },
       {
-        title: 'What is something that you would like to try again?',
+        title: 'What\'s your typical response time for service calls?',
         description:
-          "A business big enough that it could be listed on the NASDAQ goes belly up. Disappears! It ceases to exist without me. No, you clearly don't know who you're talking to, so let me clue you in.",
+          'Most non-emergency calls are scheduled within 24-48 hours. For urgent business issues, we offer same-day emergency service at standard rates.',
       },
       {
-        title: 'If you could only ask one question to each person you meet, what would that question be?',
+        title: 'Do you provide remote support?',
         description:
-          "This is not about revenge. This is about justice. A lot of things can change in twelve years, Admiral. Well, that's certainly good to know. About four years. I got tired of hearing how young I looked.",
+          'Yes! Many issues can be resolved remotely, which saves you time and money. We use secure remote access tools and always ask permission before connecting.',
       },
     ]}
   />
@@ -367,10 +356,10 @@ const metadata = {
 
   <Stats
     stats={[
-      { title: 'Downloads', amount: '132K' },
-      { title: 'Stars', amount: '24.8K' },
-      { title: 'Forks', amount: '10.3K' },
-      { title: 'Users', amount: '48.4K' },
+      { title: 'Devices Repaired', amount: '250+' },
+      { title: 'Networks Configured', amount: '85+' },
+      { title: 'Security Installs', amount: '40+' },
+      { title: 'Satisfied Clients', amount: '300+' },
     ]}
   />
 
@@ -380,20 +369,19 @@ const metadata = {
     actions={[
       {
         variant: 'primary',
-        text: 'Get template',
-        href: 'https://github.com/onwidget/astrowind',
-        target: '_blank',
-        icon: 'tabler:download',
+        text: 'Get Help Now',
+        href: '/contact',
+        target: '_self',
+        icon: 'tabler:message',
       },
     ]}
   >
     <Fragment slot="title">
-      Astro&nbsp;+&nbsp;<br class="block sm:hidden" /><span class="sm:whitespace-nowrap">Tailwind CSS</span>
+      Need Tech Support?
     </Fragment>
 
     <Fragment slot="subtitle">
-      Be very surprised by these huge fake numbers you are seeing on this page. <br class="hidden md:inline" />Don't
-      waste more time! :P
+      Reach out to AJL Tech NJ for reliable service and clear answers.
     </Fragment>
   </CallToAction>
 </Layout>

@@ -1,183 +1,104 @@
-import { getPermalink, getBlogPermalink, getAsset } from './utils/permalinks';
+import { getPermalink, getBlogPermalink } from './utils/permalinks';
 
 export const headerData = {
   links: [
     {
-      text: 'Homes',
+      text: 'Services',
       links: [
-        {
-          text: 'SaaS',
-          href: getPermalink('/homes/saas'),
-        },
-        {
-          text: 'Startup',
-          href: getPermalink('/homes/startup'),
-        },
-        {
-          text: 'Mobile App',
-          href: getPermalink('/homes/mobile-app'),
-        },
-        {
-          text: 'Personal',
-          href: getPermalink('/homes/personal'),
-        },
+        { text: 'Tech Support', href: getPermalink('/services/tech-support') },
+        { text: 'Security Systems', href: getPermalink('/services/security') },
+        { text: 'Network Setup', href: getPermalink('/services/networking') },
+        { text: 'Device Repairs', href: getPermalink('/services/repairs') },
+        { text: 'Custom Imaging', href: getPermalink('/services/imaging') },
       ],
     },
     {
-      text: 'Pages',
+      text: 'Pricing',
       links: [
-        {
-          text: 'Features (Anchor Link)',
-          href: getPermalink('/#features'),
-        },
-        {
-          text: 'Services',
-          href: getPermalink('/services'),
-        },
-        {
-          text: 'Pricing',
-          href: getPermalink('/pricing'),
-        },
-        {
-          text: 'About us',
-          href: getPermalink('/about'),
-        },
-        {
-          text: 'Contact',
-          href: getPermalink('/contact'),
-        },
-        {
-          text: 'Terms',
-          href: getPermalink('/terms'),
-        },
-        {
-          text: 'Privacy policy',
-          href: getPermalink('/privacy'),
-        },
+        { text: 'Service Pricing', href: getPermalink('/pricing') },
+        { text: 'Subscription Plans', href: getPermalink('/subscription') },
       ],
     },
     {
-      text: 'Landing',
+      text: 'About',
       links: [
-        {
-          text: 'Lead Generation',
-          href: getPermalink('/landing/lead-generation'),
-        },
-        {
-          text: 'Long-form Sales',
-          href: getPermalink('/landing/sales'),
-        },
-        {
-          text: 'Click-Through',
-          href: getPermalink('/landing/click-through'),
-        },
-        {
-          text: 'Product Details (or Services)',
-          href: getPermalink('/landing/product'),
-        },
-        {
-          text: 'Coming Soon or Pre-Launch',
-          href: getPermalink('/landing/pre-launch'),
-        },
-        {
-          text: 'Subscription',
-          href: getPermalink('/landing/subscription'),
-        },
+        { text: 'Our Story', href: getPermalink('/about') },
+        { text: 'Meet the Team', href: getPermalink('/team') },
       ],
     },
     {
-      text: 'Blog',
+      text: 'Resources',
       links: [
-        {
-          text: 'Blog List',
-          href: getBlogPermalink(),
-        },
-        {
-          text: 'Article',
-          href: getPermalink('get-started-website-with-astro-tailwind-css', 'post'),
-        },
-        {
-          text: 'Article (with MDX)',
-          href: getPermalink('markdown-elements-demo-post', 'post'),
-        },
-        {
-          text: 'Category Page',
-          href: getPermalink('tutorials', 'category'),
-        },
-        {
-          text: 'Tag Page',
-          href: getPermalink('astro', 'tag'),
-        },
+        { text: 'FAQ', href: getPermalink('/faq') },
+        { text: 'Blog', href: getBlogPermalink() },
+        { text: 'Contact', href: getPermalink('/contact') },
+        { text: 'Privacy Policy', href: getPermalink('/privacy') },
+        { text: 'Terms of Service', href: getPermalink('/terms') },
       ],
-    },
-    {
-      text: 'Widgets',
-      href: '#',
     },
   ],
-  actions: [{ text: 'Download', href: 'https://github.com/onwidget/astrowind', target: '_blank' }],
+  actions: [
+    { text: 'Request Service', href: getPermalink('/contact'), target: '_self' },
+  ],
 };
+
+
 
 export const footerData = {
   links: [
     {
-      title: 'Product',
+      title: 'Services',
       links: [
-        { text: 'Features', href: '#' },
-        { text: 'Security', href: '#' },
-        { text: 'Team', href: '#' },
-        { text: 'Enterprise', href: '#' },
-        { text: 'Customer stories', href: '#' },
-        { text: 'Pricing', href: '#' },
-        { text: 'Resources', href: '#' },
-      ],
-    },
-    {
-      title: 'Platform',
-      links: [
-        { text: 'Developer API', href: '#' },
-        { text: 'Partners', href: '#' },
-        { text: 'Atom', href: '#' },
-        { text: 'Electron', href: '#' },
-        { text: 'AstroWind Desktop', href: '#' },
-      ],
-    },
-    {
-      title: 'Support',
-      links: [
-        { text: 'Docs', href: '#' },
-        { text: 'Community Forum', href: '#' },
-        { text: 'Professional Services', href: '#' },
-        { text: 'Skills', href: '#' },
-        { text: 'Status', href: '#' },
+        { text: 'Tech Support', href: getPermalink('/services/tech-support') },
+        { text: 'Security Systems', href: getPermalink('/services/security') },
+        { text: 'Network Setup', href: getPermalink('/services/networking') },
+        { text: 'Device Repairs', href: getPermalink('/services/repairs') },
+        { text: 'PC Imaging', href: getPermalink('/services/imaging') },
+        { text: 'All Services', href: getPermalink('/services') },
       ],
     },
     {
       title: 'Company',
       links: [
-        { text: 'About', href: '#' },
-        { text: 'Blog', href: '#' },
-        { text: 'Careers', href: '#' },
-        { text: 'Press', href: '#' },
-        { text: 'Inclusion', href: '#' },
-        { text: 'Social Impact', href: '#' },
-        { text: 'Shop', href: '#' },
+        { text: 'About Us', href: getPermalink('/about') },
+        { text: 'Meet the Team', href: getPermalink('/team') },
+        { text: 'Pricing', href: getPermalink('/pricing') },
+        { text: 'Subscriptions', href: getPermalink('/subscription') },
+        { text: 'Contact Us', href: getPermalink('/contact') },
+        { text: 'Service Areas', href: getPermalink('/about#service-areas') },
+      ],
+    },
+    {
+      title: 'Resources',
+      links: [
+        { text: 'FAQ', href: getPermalink('/faq') },
+        { text: 'Blog & Tips', href: getBlogPermalink() },
+        { text: 'Emergency Support', href: getPermalink('/contact#emergency') },
+      ],
+    },
+    {
+      title: 'Support',
+      links: [
+        { text: 'Get Help', href: getPermalink('/contact') },
+        { text: 'Remote Support', href: getPermalink('/services/tech-support#remote') },
+        { text: 'Schedule Service', href: getPermalink('/contact#schedule') },
+        { text: 'Warranty Info', href: getPermalink('/faq#warranty') },
       ],
     },
   ],
   secondaryLinks: [
-    { text: 'Terms', href: getPermalink('/terms') },
+    { text: 'Terms of Service', href: getPermalink('/terms') },
     { text: 'Privacy Policy', href: getPermalink('/privacy') },
   ],
   socialLinks: [
-    { ariaLabel: 'X', icon: 'tabler:brand-x', href: '#' },
-    { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: '#' },
+    { ariaLabel: 'Call AJL Tech NJ', icon: 'tabler:phone', href: 'tel:+12013975495' },
+    { ariaLabel: 'Email AJL Tech NJ', icon: 'tabler:mail', href: 'mailto:info@ajltechnj.com' },
     { ariaLabel: 'Facebook', icon: 'tabler:brand-facebook', href: '#' },
-    { ariaLabel: 'RSS', icon: 'tabler:rss', href: getAsset('/rss.xml') },
-    { ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/onwidget/astrowind' },
+    { ariaLabel: 'LinkedIn', icon: 'tabler:brand-linkedin', href: '#' },
   ],
   footNote: `
-    <img class="w-5 h-5 md:w-6 md:h-6 md:-mt-0.5 bg-cover mr-1.5 rtl:mr-0 rtl:ml-1.5 float-left rtl:float-right rounded-sm" src="https://onwidget.com/favicon/favicon-32x32.png" alt="onWidget logo" loading="lazy"></img>
-    Made by <a class="text-blue-600 underline dark:text-muted" href="https://onwidget.com/"> onWidget</a> · All rights reserved.
+    <span class="font-semibold">AJL Tech NJ</span> · Professional Technology Services for North Jersey · 
+    <a class="text-blue-600 underline dark:text-blue-400" href="tel:+12013975495">(201) 397-5495</a> · 
+    All rights reserved © ${new Date().getFullYear()}.
   `,
 };

@@ -7,7 +7,8 @@ import Steps2 from '~/components/widgets/Steps2.astro';
 import Layout from '~/layouts/PageLayout.astro';
 
 const metadata = {
-  title: 'About us',
+  title: 'About Jorge Lamas — AJL Tech NJ',
+  description: 'Meet Jorge Lamas, founder of AJL Tech NJ. From humble beginnings in Peru to expert technician at Newark Airport, discover the passion and experience behind our trusted tech support services.',
 };
 ---
 
@@ -15,61 +16,59 @@ const metadata = {
   <!-- Hero Widget ******************* -->
 
   <Hero
-    tagline="About us"
+    tagline="About Jorge Lamas"
     image={{
-      src: 'https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      alt: 'Caos Image',
+      src: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      alt: 'Jorge Lamas - AJL Tech NJ Founder',
     }}
   >
     <Fragment slot="title">
-      Elevate your online presence with our <br />
-      <span class="text-accent dark:text-white"> Beautiful Website Templates</span>
+      From Humble Beginnings to <br />
+      <span class="text-accent dark:text-white"> Trusted Tech Expert</span>
     </Fragment>
 
     <Fragment slot="subtitle">
-      Donec efficitur, ipsum quis congue luctus, mauris magna convallis mauris, eu auctor nisi lectus non augue. Donec
-      quis lorem non massa vulputate efficitur ac at turpis. Sed tincidunt ex a nunc convallis, et lobortis nisi tempus.
-      Suspendisse vitae nisi eget tortor luctus maximus sed non lectus.
+      Meet Jorge Lamas, the passionate technician behind AJL Tech NJ. Born in Peru with a natural gift for fixing things, Jorge has spent years perfecting his craft working with enterprise-level technology systems at Newark Airport. Now he's building lasting relationships with North Jersey families and businesses who trust him with their most important tech needs.
     </Fragment>
   </Hero>
 
   <!-- Stats Widget ****************** -->
 
   <Stats
-    title="Statistics about us"
+    title="Jorge's Professional Journey"
     stats={[
-      { title: 'Offices', amount: '4' },
-      { title: 'Employees', amount: '248' },
-      { title: 'Templates', amount: '12' },
-      { title: 'Awards', amount: '24' },
+      { title: 'Years Experience', amount: '10+' },
+      { title: 'Devices Repaired', amount: '1000+' },
+      { title: 'Happy Clients', amount: '300+' },
+      { title: 'Newark Airport Years', amount: '5+' },
     ]}
   />
 
   <!-- Features3 Widget ************** -->
 
   <Features3
-    title="Our templates"
-    subtitle="Etiam scelerisque, enim eget vestibulum luctus, nibh mauris blandit nulla, nec vestibulum risus justo ut enim. Praesent lacinia diam et ante imperdiet euismod."
+    title="Experience That Matters"
+    subtitle="Jorge's hands-on experience spans from major airline operations to personal device repairs, giving him unique insights into what technology really needs to work reliably."
     columns={3}
     isBeforeContent={true}
     items={[
       {
-        title: 'Educational',
+        title: 'Airport Operations',
         description:
-          'Morbi faucibus luctus quam, sit amet aliquet felis tempor id. Cras augue massa, ornare quis dignissim a, molestie vel nulla.',
-        icon: 'tabler:template',
+          'Years of experience maintaining United Airlines kiosks, workstations, and critical systems at Newark Airport through DecisionOne partnership.',
+        icon: 'tabler:plane',
       },
       {
-        title: 'Interior Design',
+        title: 'Multi-Platform Expert',
         description:
-          'Vivamus porttitor, tortor convallis aliquam pretium, turpis enim consectetur elit, vitae egestas purus erat ac nunc nulla.',
-        icon: 'tabler:template',
+          'Deep expertise across Apple, Android, Microsoft, and enterprise systems gained from real-world, high-pressure environments.',
+        icon: 'tabler:devices',
       },
       {
-        title: 'Photography',
+        title: 'Problem Solver',
         description:
-          'Duis sed lectus in nisl vehicula porttitor eget quis odio. Aliquam erat volutpat. Nulla eleifend nulla id sem fermentum.',
-        icon: 'tabler:template',
+          'Natural troubleshooting ability honed through thousands of repairs and system fixes in mission-critical airline operations.',
+        icon: 'tabler:tools',
       },
     ]}
   />
@@ -81,68 +80,68 @@ const metadata = {
     isAfterContent={true}
     items={[
       {
-        title: 'E-commerce',
+        title: 'Mobile Device Mastery',
         description:
-          'Rutrum non odio at vehicula. Proin ipsum justo, dignissim in vehicula sit amet, dignissim id quam. Sed ac tincidunt sapien.',
-        icon: 'tabler:template',
+          'Extensive experience repairing and configuring smartphones and tablets for airline staff and passengers in high-volume environments.',
+        icon: 'tabler:device-mobile',
       },
       {
-        title: 'Blog',
+        title: 'Network Engineering',
         description:
-          'Nullam efficitur volutpat sem sed fringilla. Suspendisse et enim eu orci volutpat laoreet ac vitae libero.',
-        icon: 'tabler:template',
+          'UAL-certified network expertise gained from managing complex airport infrastructure and connectivity systems.',
+        icon: 'tabler:network',
       },
       {
-        title: 'Business',
+        title: 'Customer Service Excellence',
         description:
-          'Morbi et elit finibus, facilisis justo ut, pharetra ipsum. Donec efficitur, ipsum quis congue luctus, mauris magna.',
-        icon: 'tabler:template',
+          'Proven ability to work under pressure while maintaining friendly, professional service - essential skills learned in airport operations.',
+        icon: 'tabler:heart',
       },
       {
-        title: 'Branding',
+        title: 'Security & Compliance',
         description:
-          'Suspendisse vitae nisi eget tortor luctus maximus sed non lectus. Cras malesuada pretium placerat. Nullam venenatis dolor a ante rhoncus.',
-        icon: 'tabler:template',
+          'Deep understanding of security protocols and compliance requirements from working in sensitive airport environments.',
+        icon: 'tabler:shield-check',
       },
       {
-        title: 'Medical',
+        title: 'Rapid Diagnostics',
         description:
-          'Vestibulum malesuada lacus id nibh posuere feugiat. Nam volutpat nulla a felis ultrices, id suscipit mauris congue. In hac habitasse platea dictumst.',
-        icon: 'tabler:template',
+          'Lightning-fast troubleshooting abilities developed through years of fixing critical systems that couldn\'t afford downtime.',
+        icon: 'tabler:search',
       },
       {
-        title: 'Fashion Design',
+        title: 'Family Values',
         description:
-          'Maecenas eu tellus eget est scelerisque lacinia et a diam. Aliquam velit lorem, vehicula id fermentum et, rhoncus et purus.',
-        icon: 'tabler:template',
+          'As a married man from Peru, Jorge brings dedication, reliability, and personal care to every client relationship.',
+        icon: 'tabler:home-heart',
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80',
-      alt: 'Colorful Image',
+      src: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80',
+      alt: 'Professional Tech Expertise',
     }}
   />
 
   <!-- Steps2 Widget ****************** -->
 
   <Steps2
-    title="Our values"
-    subtitle="Maecenas eu tellus eget est scelerisque lacinia et a diam. Aliquam velit lorem, vehicula id fermentum et, rhoncus et purus. Nulla facilisi. Vestibulum malesuada lacus."
+    title="Jorge's Core Values"
+    subtitle="Born in Peru and shaped by years of hands-on technical work, Jorge's approach to technology repair and support is guided by timeless values that put people first."
     items={[
       {
-        title: 'Customer-centric approach',
+        title: 'Honest Communication',
         description:
-          'Donec id nibh neque. Quisque et fermentum tortor. Fusce vitae dolor a mauris dignissim commodo. Ut eleifend luctus condimentum.',
+          'Jorge believes in explaining technical issues in plain language and providing transparent pricing. No technical jargon, no hidden fees - just clear, honest service.',
       },
       {
-        title: 'Constant Improvement',
+        title: 'Continuous Learning',
         description:
-          'Phasellus laoreet fermentum venenatis. Vivamus dapibus pulvinar arcu eget mattis. Fusce eget mauris leo.',
+          'Technology constantly evolves, and Jorge stays current through ongoing education and hands-on experience. From Newark Airport systems to the latest smartphones, he adapts and grows.',
       },
       {
-        title: 'Ethical Practices',
+        title: 'Personal Relationships',
         description:
-          'Vestibulum imperdiet libero et lectus molestie, et maximus augue porta. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.',
+          'Every client is treated like family. Jorge takes the time to understand your specific needs and builds lasting relationships based on trust and reliable service.',
       },
     ]}
   />
@@ -150,30 +149,30 @@ const metadata = {
   <!-- Steps2 Widget ****************** -->
 
   <Steps2
-    title="Achievements"
-    subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mi risus tempus nulla, sed porttitor est nibh at nulla."
+    title="Professional Journey"
+    subtitle="From the fast-paced environment of Newark Airport to serving North Jersey communities, Jorge's career has been built on solving problems and delivering results when it matters most."
     isReversed={true}
     callToAction={{
-      text: 'See more',
-      href: '/',
+      text: 'Contact Jorge',
+      href: '/contact',
     }}
     items={[
       {
-        title: 'Global reach',
-        description: 'Nam malesuada urna in enim imperdiet tincidunt. Phasellus non tincidunt nisi, at elementum mi.',
-        icon: 'tabler:globe',
+        title: 'DecisionOne Airport Operations',
+        description: 'Years of maintaining critical United Airlines systems - from check-in kiosks to scanners and workstations. Jorge mastered working under pressure with zero tolerance for downtime.',
+        icon: 'tabler:plane',
       },
       {
-        title: 'Positive customer feedback and reviews',
+        title: 'Multi-Platform Expertise',
         description:
-          'Cras semper nulla leo, eget laoreet erat cursus sed. Praesent faucibus massa in purus iaculis dictum.',
-        icon: 'tabler:message-star',
+          'Daily hands-on experience with Apple, Android, Microsoft, and proprietary airline systems. Jorge developed the versatility to tackle any technology challenge.',
+        icon: 'tabler:device-desktop',
       },
       {
-        title: 'Awards and recognition as industry experts',
+        title: 'North Jersey Business Owner',
         description:
-          'Phasellus lacinia cursus velit, eu malesuada magna pretium eu. Etiam aliquet tellus purus, blandit lobortis ex rhoncus vitae.',
-        icon: 'tabler:award',
+          'Building on his airport expertise, Jorge founded AJL Tech NJ to bring enterprise-level technical support to homes and small businesses throughout North Jersey.',
+        icon: 'tabler:building-store',
       },
     ]}
   />
@@ -181,47 +180,39 @@ const metadata = {
   <!-- Features2 Widget ************** -->
 
   <Features2
-    title="Our locations"
-    tagline="Find us"
-    columns={4}
-    items={[
-      {
-        title: 'EE.UU',
-        description: '1234 Lorem Ipsum St, 12345, Miami',
-      },
-      {
-        title: 'Spain',
-        description: '5678 Lorem Ipsum St, 56789, Madrid',
-      },
-      {
-        title: 'Australia',
-        description: '9012 Lorem Ipsum St, 90123, Sydney',
-      },
-      {
-        title: 'Brazil',
-        description: '3456 Lorem Ipsum St, 34567, São Paulo',
-      },
-    ]}
-  />
-
-  <!-- Features2 Widget ************** -->
-
-  <Features2
-    title="Technical Support"
-    tagline="Contact us"
+    title="Service Area"
+    tagline="Where we serve"
     columns={2}
     items={[
       {
-        title: 'Chat with us',
-        description:
-          'Integer luctus laoreet libero, auctor varius purus rutrum sit amet. Ut nec molestie nisi, quis eleifend mi.',
-        icon: 'tabler:messages',
+        title: 'North Jersey',
+        description: 'Serving Essex, Hudson, Bergen, Passaic, Union, and Morris counties with on-site and remote support.',
       },
       {
-        title: 'Call us',
+        title: 'Remote Support',
+        description: 'Secure remote assistance available nationwide for software issues, troubleshooting, and system optimization.',
+      },
+    ]}
+  />
+
+  <!-- Features2 Widget ************** -->
+
+  <Features2
+    title="Get in Touch"
+    tagline="Contact Jorge"
+    columns={2}
+    items={[
+      {
+        title: 'Schedule Service',
         description:
-          'Mauris faucibus finibus orci, in posuere elit viverra non. In hac habitasse platea dictumst. Cras lobortis metus a hendrerit congue.',
-        icon: 'tabler:headset',
+          'Ready to fix your tech problems? Contact Jorge directly to schedule on-site service or remote support sessions.',
+        icon: 'tabler:calendar',
+      },
+      {
+        title: 'Quick Questions',
+        description:
+          'Have a quick tech question? Jorge is always happy to provide brief consultations and honest advice about your technology needs.',
+        icon: 'tabler:phone',
       },
     ]}
   />

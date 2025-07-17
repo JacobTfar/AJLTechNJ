@@ -8,7 +8,8 @@ import Features3 from '~/components/widgets/Features3.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 
 const metadata = {
-  title: 'Pricing',
+  title: 'Pricing — AJL Tech NJ',
+  description: 'Transparent pricing for professional tech support services in North Jersey. From device repairs to network setup, get clear estimates with no hidden fees.',
 };
 ---
 
@@ -17,94 +18,201 @@ const metadata = {
 
   <HeroText
     tagline="Pricing"
-    title="Stellar Pricing for Every Journey"
-    subtitle="Choose the perfect plan that aligns with your cosmic goals."
+    title="Transparent Tech Support Pricing"
+    subtitle="Clear, upfront pricing for all our professional tech services. No hidden fees, no surprises."
   />
 
   <!-- Pricing Widget ******************* -->
 
   <Prices
-    title="Our prices"
-    subtitle="Only pay for what you need"
+    title="One-Time Service Pricing"
+    subtitle="Pay as you go for individual tech support services"
     prices={[
       {
-        title: 'basic',
-        subtitle: 'Optimal choice for personal use',
-        price: 29,
-        period: 'per month',
+        title: 'Remote Support',
+        subtitle: 'Perfect for software issues and troubleshooting',
+        price: 75,
+        period: 'per session',
         items: [
           {
-            description: 'Etiam in libero, et volutpat',
+            description: 'Software troubleshooting and fixes',
           },
           {
-            description: 'Aenean ac nunc dolor tristique',
+            description: 'Printer and device setup assistance',
           },
           {
-            description: 'Cras scelerisque accumsan lib',
+            description: 'Performance optimization',
           },
           {
-            description: 'In hac habitasse',
+            description: 'Email and app configuration',
+          },
+          {
+            description: 'Follow-up support included',
           },
         ],
         callToAction: {
-          target: '_blank',
-          text: 'Get started',
-          href: '#',
+          target: '_self',
+          text: 'Get Remote Support',
+          href: '/contact',
         },
       },
       {
-        title: 'standard',
-        subtitle: 'Optimal choice for small teams',
-        price: 69,
-        period: 'Per Month',
+        title: 'On-Site Service',
+        subtitle: 'Complete tech support at your location',
+        price: 125,
+        period: 'per visit',
         items: [
           {
-            description: 'Proin vel laoreet',
+            description: 'Network setup and optimization',
           },
           {
-            description: 'Ut efficitur habitasse egestas',
+            description: 'Hardware installation and repair',
           },
           {
-            description: 'Volutpat hac curabitur',
+            description: 'Security system basic setup',
           },
           {
-            description: 'Pellentesque blandit ut nibh',
+            description: 'PC imaging and multi-system setup',
           },
           {
-            description: 'Donec fringilla sem',
+            description: 'Smart device configuration',
+          },
+          {
+            description: 'Ongoing support and consultation',
           },
         ],
         callToAction: {
-          target: '_blank',
-          text: 'Get started',
-          href: '#',
+          target: '_self',
+          text: 'Schedule Visit',
+          href: '/contact',
         },
         hasRibbon: true,
         ribbonTitle: 'popular',
       },
       {
-        title: 'premium',
-        subtitle: 'Optimal choice for companies',
-        price: 199,
-        period: 'Per Month',
+        title: 'Device Repairs',
+        subtitle: 'Professional repair services',
+        price: 'Varies',
+        period: 'by device & issue',
         items: [
           {
-            description: 'Curabitur suscipit risus',
+            description: 'iPhone screen replacement: $80-150',
           },
           {
-            description: 'Aliquam habitasse malesuada',
+            description: 'Android screen replacement: $60-120',
           },
           {
-            description: 'Suspendisse sit amet blandit',
+            description: 'Laptop repair: $100-250',
           },
           {
-            description: 'Suspendisse auctor blandit dui',
+            description: 'Data recovery: $150-300',
+          },
+          {
+            description: 'Diagnostic fee: $50 (waived if repaired)',
+          },
+          {
+            description: 'Free estimate provided',
           },
         ],
         callToAction: {
-          target: '_blank',
-          text: 'Get started',
-          href: '#',
+          target: '_self',
+          text: 'Get Repair Quote',
+          href: '/contact',
+        },
+      },
+    ]}
+  />
+
+  <!-- Subscription Pricing Widget ******************* -->
+
+  <Prices
+    title="Subscription Support Plans"
+    subtitle="Save money with ongoing tech support subscriptions"
+    prices={[
+      {
+        title: 'Home Support',
+        subtitle: 'Perfect for families and home offices',
+        price: 49,
+        period: 'per month',
+        items: [
+          {
+            description: 'Unlimited remote support',
+          },
+          {
+            description: '1 on-site visit per quarter',
+          },
+          {
+            description: 'Priority phone and email support',
+          },
+          {
+            description: 'Software updates and maintenance',
+          },
+          {
+            description: '20% off additional services',
+          },
+        ],
+        callToAction: {
+          target: '_self',
+          text: 'Start Home Plan',
+          href: '/subscription',
+        },
+      },
+      {
+        title: 'Small Business',
+        subtitle: 'Ideal for small businesses (1-10 employees)',
+        price: 149,
+        period: 'per month',
+        items: [
+          {
+            description: 'Unlimited remote support',
+          },
+          {
+            description: '2 on-site visits per month',
+          },
+          {
+            description: '4-hour response time guarantee',
+          },
+          {
+            description: 'Network monitoring and maintenance',
+          },
+          {
+            description: '30% off additional services',
+          },
+        ],
+        callToAction: {
+          target: '_self',
+          text: 'Start Business Plan',
+          href: '/subscription',
+        },
+        hasRibbon: true,
+        ribbonTitle: 'Best Value',
+      },
+      {
+        title: 'Enterprise',
+        subtitle: 'Comprehensive support for larger businesses',
+        price: 299,
+        period: 'per month',
+        items: [
+          {
+            description: 'Unlimited remote and on-site support',
+          },
+          {
+            description: '2-hour response time guarantee',
+          },
+          {
+            description: '24/7 emergency support available',
+          },
+          {
+            description: 'Complete network management',
+          },
+          {
+            description: '50% off additional services',
+          },
+        ],
+        callToAction: {
+          target: '_self',
+          text: 'Learn More',
+          href: '/subscription',
         },
       },
     ]}
@@ -113,39 +221,39 @@ const metadata = {
   <!-- Features3 Widget ************** -->
 
   <Features3
-    title="Price-related features"
-    subtitle="Discover the advantages of choosing our plans"
+    title="What's included in our pricing"
+    subtitle="Transparent pricing with no hidden costs"
     columns={2}
     items={[
       {
-        title: 'Tiered Pricing Plans',
-        description: 'Choose from a range of pricing plans designed to accommodate different budgets and requirements.',
-        icon: 'tabler:stairs',
+        title: 'Free Estimates',
+        description: 'Get a clear quote before any work begins. No surprises, no hidden fees.',
+        icon: 'tabler:file-dollar',
       },
       {
-        title: 'Transparent Pricing',
-        description: 'Clearly displayed pricing details for each plan, with no hidden costs or unexpected charges.',
-        icon: 'tabler:flip-vertical',
+        title: 'Warranty Included',
+        description: 'All repairs come with a 30-day warranty on parts and labor for peace of mind.',
+        icon: 'tabler:shield-check',
       },
       {
-        title: 'Secure Payment Methods',
-        description: 'Secure payment gateways to protect your financial information during transactions.',
-        icon: 'tabler:shield-lock',
+        title: 'Local Service',
+        description: 'North Jersey based service with quick response times and personalized support.',
+        icon: 'tabler:map-pin',
       },
       {
-        title: 'Instant Access',
-        description: `Immediate access to your chosen plan's features and templates upon subscription.`,
-        icon: 'tabler:accessible',
+        title: 'Multiple Payment Options',
+        description: 'Accept cash, check, and major credit cards for your convenience.',
+        icon: 'tabler:credit-card',
       },
       {
-        title: 'Upgrade Value',
-        description: 'Upgrade to higher-tier plans to unlock more features and benefits for an enhanced experience.',
-        icon: 'tabler:chevrons-up',
+        title: 'Follow-up Support',
+        description: 'Continued support after service completion to ensure everything works perfectly.',
+        icon: 'tabler:phone',
       },
       {
-        title: '24H support',
-        description: 'Questions answered via live chat, email or phone, every calendar day.',
-        icon: 'tabler:headset',
+        title: 'Emergency Service',
+        description: 'Urgent tech issues? We offer emergency support for critical business needs.',
+        icon: 'tabler:urgent',
       },
     ]}
     classes={{ container: 'max-w-5xl' }}
@@ -154,42 +262,42 @@ const metadata = {
   <!-- Steps Widget ****************** -->
 
   <Steps
-    title="A guided journey from plans to creativity"
-    tagline="simplified process"
+    title="How our service process works"
+    tagline="simple and transparent"
     isReversed={true}
     items={[
       {
-        title: 'Explore plans',
+        title: 'Contact us',
         icon: 'tabler:number-1',
       },
       {
-        title: 'Select a plan',
+        title: 'Describe your tech issue',
         icon: 'tabler:number-2',
       },
       {
-        title: 'Sign Up / Log In',
+        title: 'Get free estimate',
         icon: 'tabler:number-3',
       },
       {
-        title: 'Review order',
+        title: 'Schedule service',
         icon: 'tabler:number-4',
       },
       {
-        title: 'Enter payment details',
+        title: 'Receive professional support',
         icon: 'tabler:number-5',
       },
       {
-        title: 'Confirmation',
+        title: 'Pay for completed work',
         icon: 'tabler:number-6',
       },
       {
-        title: 'Download and start using the template(s)',
+        title: 'Enjoy ongoing support',
         icon: 'tabler:number-7',
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1536816579748-4ecb3f03d72a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80',
-      alt: 'Steps image',
+      src: 'https://images.unsplash.com/photo-1556075798-4825dfaaf498?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80',
+      alt: 'Tech support process',
     }}
   />
 
@@ -197,33 +305,33 @@ const metadata = {
 
   <FAQs
     title="Pricing FAQs"
-    subtitle="Choosing the right plan is important, and we're here to answer your questions. If you have queries about our pricing options, you're in the right place."
+    subtitle="Common questions about our service pricing and policies."
     columns={1}
     items={[
       {
-        title: 'Do the plans come with customer support?',
+        title: 'Do you charge for estimates?',
         description:
-          'Absolutely, all plans include access to our dedicated customer support to assist you with any queries or concerns.',
-      },
-      {
-        title: 'Is there a trial period for the different plans?',
-        description:
-          "Unfortunately, we don't offer trial periods for the plans. However, you can check out our demo section to preview the quality of our templates.",
-      },
-      {
-        title: 'Can I switch between plans?',
-        description:
-          'Certainly! You can easily upgrade or downgrade your plan, at any time, to find the one that best suits your evolving requirements.',
+          'No, we provide free estimates for all services. For device repairs, our diagnostic fee is waived if you proceed with the repair.',
       },
       {
         title: 'What payment methods do you accept?',
         description:
-          'We accept major credit cards and online payment methods to ensure a convenient and secure transaction process.',
+          'We accept cash, checks, and all major credit cards (Visa, MasterCard, American Express) for your convenience.',
       },
       {
-        title: 'Are there any hidden fees beyond the displayed cost?',
+        title: 'Is there a warranty on repairs?',
         description:
-          'No, the subscription cost covers all the features and templates listed under each plan. There are no hidden fees or extra charges.',
+          'Yes, all repairs come with a 30-day warranty on parts and labor. If the same issue occurs within 30 days, we\'ll fix it at no charge.',
+      },
+      {
+        title: 'Do you offer emergency or after-hours service?',
+        description:
+          'Yes, we offer emergency support for critical business needs. Emergency service rates may apply for urgent after-hours calls.',
+      },
+      {
+        title: 'Can you provide service contracts for businesses?',
+        description:
+          'Absolutely! We offer custom service contracts for small businesses that need regular IT support. Contact us to discuss your specific needs.',
       },
     ]}
   />
@@ -231,13 +339,13 @@ const metadata = {
   <!-- CallToAction Widget *********** -->
 
   <CallToAction
-    title="Ready to boost your projects?"
-    subtitle="Join our community of satisfied customers who have transformed their work with our templates."
+    title="Ready to get tech support?"
+    subtitle="Contact AJL Tech NJ today for professional, reliable tech services at transparent prices."
     actions={[
       {
         variant: 'primary',
-        text: 'Get started now',
-        href: '/',
+        text: 'Get your free estimate',
+        href: '/contact',
       },
     ]}
   />

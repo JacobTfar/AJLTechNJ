@@ -1,0 +1,210 @@
+---
+import CallToAction from '~/components/widgets/CallToAction.astro';
+import Content from '~/components/widgets/Content.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import Steps from '~/components/widgets/Steps.astro';
+import Layout from '~/layouts/PageLayout.astro';
+
+const metadata = {
+  title: 'Tech Support Services — AJL Tech NJ',
+  description: 'Professional remote and on-site tech support for homes and businesses in North Jersey. Expert troubleshooting, software installation, and ongoing technical assistance.',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
+
+  <Hero
+    tagline="Tech Support"
+    title="Professional Technical Support When You Need It"
+    subtitle="Remote and on-site tech support services for North Jersey homes and businesses. From software troubleshooting to hardware setup, we keep your technology running smoothly."
+    actions={[{ variant: 'primary', target: '_self', text: 'Get Support Now', href: '/contact' }]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80',
+      alt: 'AJL Tech NJ Support Services',
+    }}
+  />
+
+  <!-- Features2 Widget ************** -->
+
+  <Features2
+    title="Comprehensive Tech Support Solutions"
+    subtitle="Expert assistance for all your technology needs"
+    columns={2}
+    items={[
+      {
+        title: 'Remote Support',
+        description:
+          'Get help instantly with secure remote access. Perfect for software issues, configuration problems, and quick troubleshooting sessions.',
+        icon: 'tabler:device-desktop',
+      },
+      {
+        title: 'On-Site Service',
+        description:
+          'Professional technicians come to your location for hardware installation, network setup, and complex troubleshooting that requires hands-on attention.',
+        icon: 'tabler:home',
+      },
+      {
+        title: 'Software Installation & Setup',
+        description:
+          'Complete software installation, configuration, and optimization. From operating systems to specialized business applications.',
+        icon: 'tabler:download',
+      },
+      {
+        title: 'Printer & Peripheral Setup',
+        description:
+          'Professional setup and configuration of printers, scanners, and other peripherals. Network printer setup and troubleshooting included.',
+        icon: 'tabler:printer',
+      },
+      {
+        title: 'Performance Optimization',
+        description:
+          'Speed up slow computers, clean up unnecessary files, optimize startup processes, and enhance overall system performance.',
+        icon: 'tabler:rocket',
+      },
+      {
+        title: 'Data Backup & Recovery',
+        description:
+          'Set up automated backup systems, recover lost files, and create disaster recovery plans to protect your important data.',
+        icon: 'tabler:shield-check',
+      },
+    ]}
+  />
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    isReversed
+    items={[
+      {
+        title: 'Expert Troubleshooting',
+        description:
+          'Years of experience diagnosing and solving complex technical issues across all platforms and devices.',
+        icon: 'tabler:tools',
+      },
+      {
+        title: 'Clear Communication',
+        description:
+          'We explain technical issues in plain language and keep you informed throughout the support process.',
+        icon: 'tabler:message',
+      },
+      {
+        title: 'Preventive Maintenance',
+        description:
+          'Proactive system maintenance to prevent issues before they occur, saving you time and frustration.',
+        icon: 'tabler:calendar-check',
+      },
+      {
+        title: 'Follow-up Support',
+        description:
+          'Continued assistance after initial support to ensure your systems remain stable and optimized.',
+        icon: 'tabler:headset',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80',
+      alt: 'Professional Tech Support',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Why Choose Our Support</h3>
+    </Fragment>
+  </Content>
+
+  <!-- Steps Widget ****************** -->
+
+  <Steps
+    title="How Our Tech Support Works"
+    tagline="Simple Process"
+    items={[
+      {
+        title: 'Step 1: <span class="font-medium">Contact Us</span>',
+        description:
+          'Call, email, or use our contact form to describe your tech issue. We\'ll assess whether remote or on-site support is best.',
+        icon: 'tabler:phone',
+      },
+      {
+        title: 'Step 2: <span class="font-medium">Quick Assessment</span>',
+        description:
+          'Our technician will quickly diagnose the issue and provide you with a clear explanation and estimated time to resolve.',
+        icon: 'tabler:search',
+      },
+      {
+        title: 'Step 3: <span class="font-medium">Expert Resolution</span>',
+        description:
+          'We fix the issue using proven techniques and best practices, keeping you informed throughout the process.',
+        icon: 'tabler:tool',
+      },
+      {
+        title: 'Step 4: <span class="font-medium">Testing & Follow-up</span>',
+        description:
+          'We thoroughly test the solution and provide follow-up support to ensure everything continues working properly.',
+        icon: 'tabler:check',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80',
+      alt: 'Tech Support Process',
+    }}
+  />
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    isAfterContent
+    items={[
+      {
+        title: 'Windows & Mac Support',
+        description:
+          'Expert support for both Windows and Mac systems, as well as various Linux distributions.',
+        icon: 'tabler:device-laptop',
+      },
+      {
+        title: 'Business & Home Users',
+        description:
+          'Tailored support solutions for both residential customers and small business environments.',
+        icon: 'tabler:building',
+      },
+      {
+        title: 'Emergency Support',
+        description:
+          'Same-day emergency support available for critical business issues that can\'t wait.',
+        icon: 'tabler:urgent',
+      },
+      {
+        title: 'Competitive Pricing',
+        description:
+          'Transparent pricing with no hidden fees. Remote support starts at $75/session, on-site visits at $125.',
+        icon: 'tabler:currency-dollar',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
+      alt: 'Comprehensive Tech Support',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Complete Support Solutions</h3>
+    </Fragment>
+  </Content>
+
+  <!-- CallToAction Widget *********** -->
+
+  <CallToAction
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Get Tech Support',
+        href: '/contact',
+      },
+      {
+        variant: 'secondary',
+        text: 'View Pricing',
+        href: '/pricing',
+      },
+    ]}
+    title="Need Technical Support?"
+    subtitle="Contact AJL Tech NJ today for professional, reliable tech support that gets your technology working properly."
+  />
+</Layout>

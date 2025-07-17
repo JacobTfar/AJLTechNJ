@@ -7,7 +7,8 @@ import Testimonials from '~/components/widgets/Testimonials.astro';
 import Layout from '~/layouts/PageLayout.astro';
 
 const metadata = {
-  title: 'Services',
+  title: 'Our Services — AJL Tech NJ',
+  description: 'Explore AJL Tech NJ\'s trusted offerings: tech support, device repairs, security installs, and custom network setups tailored for homes and small businesses in North Jersey.',
 };
 ---
 
@@ -15,74 +16,57 @@ const metadata = {
   <!-- Hero Widget ******************* -->
 
   <Hero
-    tagline="Services"
-    title="Elevate your projects with our stunning templates"
-    subtitle="Explore our meticulously crafted templates tailored to various industries and purposes. From captivating presentations to functional website designs, we offer the tools you need to succeed."
-    actions={[{ variant: 'primary', target: '_blank', text: 'Start exploring', href: '/' }]}
+    tagline="Our Services"
+    title="Professional Tech Solutions for North Jersey"
+    subtitle="From troubleshooting tech issues to setting up security systems and optimizing networks, AJL Tech NJ provides reliable, local support for homes and small businesses."
+    actions={[{ variant: 'primary', target: '_self', text: 'Get Support Today', href: '/contact' }]}
     image={{
-      src: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80',
-      alt: 'AstroWind Hero Image',
+      src: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80',
+      alt: 'AJL Tech NJ Services',
     }}
   />
 
   <!-- Features2 Widget ************** -->
 
   <Features2
-    title="Explore our diverse templates"
-    subtitle="Discover our selection below to streamline and elevate your projects."
+    title="Our Core Services"
+    subtitle="Professional tech support and solutions tailored for North Jersey homes and businesses."
     columns={3}
     items={[
       {
-        title: 'Educational',
+        title: 'Tech Support',
         description:
-          'By harmonizing instructional design and visual appeal, templates streamline content creation for varied materials, expediting development and cultivating engaging educational spaces.',
-        icon: 'tabler:school',
+          'Remote and on-site troubleshooting for all your technology needs. From printer setups and software installations to smart device configuration and performance optimization.',
+        icon: 'tabler:device-desktop',
       },
       {
-        title: 'Interior Design',
+        title: 'Security System Installation',
         description:
-          'Crafting functional, visually appealing spaces for residential and commercial use. Templates emphasize layout, colors, and furniture setups, offering a versatile toolkit for your design vision.',
-        icon: 'tabler:home-star',
+          'Basic camera setup and configuration for home and office security. For advanced installations requiring NJ licensure, we partner with certified specialists to ensure compliance.',
+        icon: 'tabler:shield-check',
       },
       {
-        title: 'Photography',
-        description: `Empowering photographers, our templates facilitate captivating storytelling. With a keen focus on layout, galleries, and typography, they cater to both professionals and enthusiasts.`,
-        icon: 'tabler:photo',
+        title: 'Network Engineering',
+        description: 'Wi-Fi optimization, router setup, and custom LAN builds. Our team brings enterprise-level experience from working with mission-critical airport systems to enhance your connectivity.',
+        icon: 'tabler:network',
       },
       {
-        title: 'E-commerce',
+        title: 'Device Repairs',
         description:
-          'Developing engaging online stores, our E-commerce templates ensure a dynamic presence to effectively showcase products. Ideal for startups or revamps.',
-        icon: 'tabler:shopping-cart',
+          'Professional repair services for mobile phones (iPhone & Android), tablets, and laptops. Screen replacements, battery issues, boot fixes, water damage recovery, and comprehensive diagnostics with quick turnaround times.',
+        icon: 'tabler:tool',
       },
       {
-        title: 'Blog',
+        title: 'PC Imaging & Setup',
         description:
-          'With attention to typography, these templates empower effective content presentation for writers at any stage, ensuring visually engaging and user-friendly blogs.',
-        icon: 'tabler:article',
+          'Profile cloning, multi-system setup, and clean OS deployment. Perfect for small offices needing identical configurations or high-performance personal builds.',
+        icon: 'tabler:device-laptop',
       },
       {
-        title: 'Business',
+        title: 'Custom Solutions',
         description:
-          'Providing polished options for effective visual communication, these templates empower both startups and established companies for a professional brand presence.',
-        icon: 'tabler:building-store',
-      },
-      {
-        title: 'Branding',
-        description:
-          'Offering pre-designed elements for a consistent brand identity, including logos and marketing materials. Ideal for new ventures or revamps.',
-        icon: 'tabler:arrow-big-up-lines',
-      },
-      {
-        title: 'Medical',
-        description: `From presentations to patient forms, these tools enhance communication effectiveness for healthcare professionals. Ideal for medical practices and research pursuits.`,
-        icon: 'tabler:vaccine',
-      },
-      {
-        title: 'Fashion Design',
-        description:
-          'With attention to detail, customization, and contemporary design, they empower designers to showcase ideas cohesively. Ideal for all levels of designers.',
-        icon: 'tabler:tie',
+          'Tailored technology solutions for unique business needs. We assess your requirements and design systems that enhance productivity and streamline operations.',
+        icon: 'tabler:settings',
       },
     ]}
   />
@@ -93,37 +77,37 @@ const metadata = {
     isReversed
     items={[
       {
-        title: 'High-Quality Designs',
+        title: 'Local Expertise',
         description:
-          'Our templates feature top-tier designs that ensure a professional and polished appearance for your projects.',
-        icon: 'tabler:wand',
+          'Based in North Jersey, we understand the unique tech challenges of local homes and businesses, providing personalized solutions that work.',
+        icon: 'tabler:map-pin',
       },
       {
-        title: 'Customization Tools',
+        title: 'Enterprise Experience',
         description:
-          'Tailor each template to your unique needs with user-friendly customization tools that let you personalize colors, fonts, and content.',
-        icon: 'tabler:settings',
+          'Our team brings years of enterprise-level experience from working with mission-critical systems, applying that expertise to your home and business tech needs.',
+        icon: 'tabler:certificate',
       },
       {
-        title: 'Pre-Designed Elements',
+        title: 'Flexible Service',
         description:
-          'Save time and effort with our ready-to-use elements, including graphics, icons, and layouts that enhance the visual appeal of your creations.',
-        icon: 'tabler:presentation',
+          'Choose from remote support, on-site visits, or drop-off services. We adapt to your schedule and preferences for maximum convenience.',
+        icon: 'tabler:clock',
       },
       {
-        title: 'Preview and Mockup Views',
+        title: 'Transparent Pricing',
         description:
-          'Visualize the final outcome before making any changes using our preview and mockup views, ensuring your projects meet your expectations.',
-        icon: 'tabler:carousel-horizontal',
+          'No hidden fees or surprise charges. We provide clear estimates upfront and explain exactly what work needs to be done.',
+        icon: 'tabler:currency-dollar',
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1525909002-1b05e0c869d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80',
-      alt: 'Features Image',
+      src: 'https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80',
+      alt: 'AJL Tech NJ Professional Services',
     }}
   >
     <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Main Features</h3>
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Why Choose AJL Tech NJ</h3>
     </Fragment>
   </Content>
 
@@ -133,77 +117,77 @@ const metadata = {
     isAfterContent
     items={[
       {
-        title: 'Time Savings',
+        title: 'Quick Response',
         description:
-          'Streamline your workflow, enabling you to create stunning materials efficiently and allocate more time to your core tasks.',
+          'Fast turnaround times for repairs and support requests. Most issues resolved within 24-48 hours, with emergency support available.',
         icon: 'tabler:clock',
       },
       {
-        title: 'Professional Appearance',
+        title: 'Reliable Solutions',
         description:
-          'Elevate your projects with the polished and sophisticated look that our templates provide, making a lasting impression on your audience.',
-        icon: 'tabler:school',
+          'We focus on long-term fixes, not temporary patches. Our solutions are designed to prevent recurring issues and improve overall performance.',
+        icon: 'tabler:shield-check',
       },
       {
-        title: 'Cost-Efficiency',
+        title: 'Ongoing Support',
         description:
-          'Benefit from cost savings by avoiding the need for custom design work, as our templates offer professional-grade designs at a fraction of the cost.',
-        icon: 'tabler:coin',
+          'Follow-up support included with all services. We ensure your systems continue to work smoothly after our initial service.',
+        icon: 'tabler:headset',
       },
       {
-        title: 'Instant Download',
+        title: 'Local Partnership',
         description:
-          'Enjoy immediate access to your chosen templates upon purchase, enabling you to begin working on your projects without delay.',
-        icon: 'tabler:file-download',
+          'Build a lasting relationship with a local tech expert who understands your specific needs and can provide ongoing assistance.',
+        icon: 'tabler:users',
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1552664688-cf412ec27db2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
-      alt: 'Benefits Image',
+      src: 'https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
+      alt: 'Professional Tech Support Benefits',
     }}
   >
     <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Benefits</h3>
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Service Benefits</h3>
     </Fragment>
   </Content>
 
   <!-- Testimonials Widget *********** -->
 
   <Testimonials
-    title="Words from real customers"
+    title="What our clients say"
     testimonials={[
       {
-        testimonial: `The designs are not only visually appealing but also highly professional. The templates have saved me a significant amount of time while helping me make a lasting impression on my clients.`,
-        name: 'Emily Kennedy',
-        job: 'Front-end developer',
+        testimonial: `Jorge helped us set up our entire office network and security system. His expertise and attention to detail made the whole process smooth and professional. Our internet is faster than ever!`,
+        name: 'Maria Rodriguez',
+        job: 'Small Business Owner',
         image: {
-          src: 'https://images.unsplash.com/photo-1618835962148-cf177563c6c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=930&q=80',
-          alt: 'Emily Kennedy Image',
+          src: 'https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=930&q=80',
+          alt: 'Maria Rodriguez',
         },
       },
       {
-        testimonial: `It beautifully showcases my work, with its clean and elegant design that lets my photographs shine. Customization was a breeze, even for a non-tech person like me. The result is a professional and immersive portfolio that's garnered numerous compliments.`,
-        name: 'Sarah Hansen',
-        job: 'Photographer',
+        testimonial: `My laptop was completely dead and I thought I'd lost everything. AJL Tech NJ not only fixed it but recovered all my files. Professional, reliable, and reasonably priced. Highly recommend!`,
+        name: 'David Chen',
+        job: 'Freelancer',
         image: {
-          src: 'https://images.unsplash.com/photo-1561406636-b80293969660?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
-          alt: 'Sarah Hansen Image',
+          src: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
+          alt: 'David Chen',
         },
       },
       {
-        testimonial: `I discovered these templates and I'm impressed by their variety and quality. They've helped me establish a consistent brand image across my marketing and social platforms, elevating my business's overall appearance.`,
-        name: 'Mark Wilkinson',
-        job: 'Small business owner',
+        testimonial: `Great local tech support! Jorge came to our home, set up all our smart devices, and made sure our Wi-Fi was working perfectly in every room. He's now our go-to tech guy.`,
+        name: 'Jennifer Thompson',
+        job: 'Homeowner',
         image: {
-          src: 'https://images.unsplash.com/photo-1545167622-3a6ac756afa4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=824&q=80',
-          alt: 'Mark Wilkinson Image',
+          src: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=824&q=80',
+          alt: 'Jennifer Thompson',
         },
       },
     ]}
     callToAction={{
-      target: '_blank',
-      text: 'More testimonials...',
-      href: 'https://github.com/onwidget/astrowind',
+      target: '_self',
+      text: 'Read more reviews...',
+      href: '/contact',
       icon: 'tabler:chevron-right',
     }}
   />
@@ -214,11 +198,11 @@ const metadata = {
     actions={[
       {
         variant: 'primary',
-        text: 'Start exploring',
-        href: '/',
+        text: 'Get Tech Support',
+        href: '/contact',
       },
     ]}
-    title="Dive into our template collection"
-    subtitle="Whether you're in business, design, or education, our templates are here to elevate your projects."
+    title="Ready to solve your tech challenges?"
+    subtitle="Contact AJL Tech NJ today for reliable, professional tech support and solutions tailored to your needs."
   />
 </Layout>

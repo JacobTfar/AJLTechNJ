@@ -1,0 +1,210 @@
+---
+import CallToAction from '~/components/widgets/CallToAction.astro';
+import Content from '~/components/widgets/Content.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import Steps from '~/components/widgets/Steps.astro';
+import Layout from '~/layouts/PageLayout.astro';
+
+const metadata = {
+  title: 'Device Repairs — Mobile, Tablet, Laptop Repair — AJL Tech NJ',
+  description: 'Professional repair services for smartphones, tablets, laptops, and other devices in North Jersey. iPhone, Android, Mac, PC repairs with quality parts and warranties.',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
+
+  <Hero
+    tagline="Device Repairs"
+    title="Expert Repair Services for All Your Devices"
+    subtitle="Professional repair services for smartphones, tablets, laptops, and more in North Jersey. Quality parts, expert craftsmanship, and warranties on all repairs."
+    actions={[{ variant: 'primary', target: '_self', text: 'Get Repair Quote', href: '/contact' }]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80',
+      alt: 'AJL Tech NJ Device Repairs',
+    }}
+  />
+
+  <!-- Features2 Widget ************** -->
+
+  <Features2
+    title="Professional Device Repair Services"
+    subtitle="Expert repairs for all your mobile devices, tablets, and computers"
+    columns={2}
+    items={[
+      {
+        title: 'iPhone & Android Repair',
+        description:
+          'Screen replacements, battery replacements, charging port repairs, water damage recovery, and more for all iPhone and Android models.',
+        icon: 'tabler:device-mobile',
+      },
+      {
+        title: 'Tablet Repair',
+        description:
+          'iPad and Android tablet repairs including cracked screens, digitizer replacement, battery service, and charging issues.',
+        icon: 'tabler:device-tablet',
+      },
+      {
+        title: 'Laptop & Computer Repair',
+        description:
+          'Screen replacements, keyboard repairs, hard drive replacement, RAM upgrades, and motherboard repairs for all brands.',
+        icon: 'tabler:device-laptop',
+      },
+      {
+        title: 'Gaming Device Repair',
+        description:
+          'Nintendo Switch, PlayStation, Xbox controller repairs, and gaming console troubleshooting and maintenance.',
+        icon: 'tabler:device-gamepad',
+      },
+      {
+        title: 'Water Damage Recovery',
+        description:
+          'Specialized water damage treatment and recovery services with advanced cleaning techniques and component replacement.',
+        icon: 'tabler:droplet',
+      },
+      {
+        title: 'Data Recovery',
+        description:
+          'Professional data recovery from damaged devices, failed hard drives, and corrupted storage devices.',
+        icon: 'tabler:database-import',
+      },
+    ]}
+  />
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    isReversed
+    items={[
+      {
+        title: 'Quality Parts',
+        description:
+          'We use only high-quality OEM and premium aftermarket parts to ensure your device performs like new after repair.',
+        icon: 'tabler:components',
+      },
+      {
+        title: 'Expert Technicians',
+        description:
+          'Years of experience repairing devices at Newark Airport and beyond, handling everything from consumer electronics to specialized equipment.',
+        icon: 'tabler:user-cog',
+      },
+      {
+        title: 'Quick Turnaround',
+        description:
+          'Most repairs completed same-day or within 24 hours, getting your essential devices back to you as quickly as possible.',
+        icon: 'tabler:clock',
+      },
+      {
+        title: 'Warranty Protection',
+        description:
+          'All repairs come with our warranty covering parts and labor, giving you peace of mind with your repair investment.',
+        icon: 'tabler:shield-check',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80',
+      alt: 'Professional Device Repair',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Why Choose Our Repair Services</h3>
+    </Fragment>
+  </Content>
+
+  <!-- Steps Widget ****************** -->
+
+  <Steps
+    title="Device Repair Process"
+    tagline="Simple Process"
+    items={[
+      {
+        title: 'Step 1: <span class="font-medium">Free Diagnosis</span>',
+        description:
+          'Bring your device in for a free diagnostic assessment. We\'ll identify the issue and provide a clear repair quote.',
+        icon: 'tabler:search',
+      },
+      {
+        title: 'Step 2: <span class="font-medium">Repair Authorization</span>',
+        description:
+          'Review the repair quote and timeline. We only proceed with your explicit approval and never perform unauthorized repairs.',
+        icon: 'tabler:file-check',
+      },
+      {
+        title: 'Step 3: <span class="font-medium">Expert Repair</span>',
+        description:
+          'Our skilled technicians perform the repair using quality parts and precise techniques, thoroughly testing all functions.',
+        icon: 'tabler:tool',
+      },
+      {
+        title: 'Step 4: <span class="font-medium">Quality Testing</span>',
+        description:
+          'Comprehensive testing to ensure all functions work properly before returning your device with warranty documentation.',
+        icon: 'tabler:check',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80',
+      alt: 'Device Repair Process',
+    }}
+  />
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    isAfterContent
+    items={[
+      {
+        title: 'All Device Brands',
+        description:
+          'We repair Apple, Samsung, Google, LG, OnePlus, and virtually all smartphone and tablet brands and models.',
+        icon: 'tabler:devices',
+      },
+      {
+        title: 'Computer Repairs',
+        description:
+          'Windows PCs, MacBooks, Chromebooks, and custom-built computers. Hardware and software issues resolved.',
+        icon: 'tabler:device-desktop',
+      },
+      {
+        title: 'Emergency Repairs',
+        description:
+          'Same-day repair service available for urgent situations when you need your device working immediately.',
+        icon: 'tabler:urgent',
+      },
+      {
+        title: 'Transparent Pricing',
+        description:
+          'Clear, upfront pricing with no hidden fees. Free diagnostics and detailed repair estimates before any work begins.',
+        icon: 'tabler:currency-dollar',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80',
+      alt: 'Comprehensive Repair Services',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Complete Repair Solutions</h3>
+    </Fragment>
+  </Content>
+
+  <!-- CallToAction Widget *********** -->
+
+  <CallToAction
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Get Repair Quote',
+        href: '/contact',
+      },
+      {
+        variant: 'secondary',
+        text: 'View All Services',
+        href: '/services',
+      },
+    ]}
+    title="Need Device Repair?"
+    subtitle="Contact AJL Tech NJ today for a free diagnostic and repair quote. Get your devices working like new again."
+  />
+</Layout>
