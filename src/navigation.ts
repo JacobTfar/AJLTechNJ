@@ -91,14 +91,13 @@ export const footerData = {
     { text: 'Privacy Policy', href: getPermalink('/privacy') },
   ],
   socialLinks: [
-    { ariaLabel: 'Call AJL Tech NJ', icon: 'tabler:phone', href: 'tel:+12013975495' },
     { ariaLabel: 'Email AJL Tech NJ', icon: 'tabler:mail', href: 'mailto:info@ajltechnj.com' },
     { ariaLabel: 'Facebook', icon: 'tabler:brand-facebook', href: '#' },
     { ariaLabel: 'LinkedIn', icon: 'tabler:brand-linkedin', href: '#' },
   ],
   footNote: `
     <span class="font-semibold">AJL Tech NJ</span> · Professional Technology Services for North Jersey · 
-    <a class="text-blue-600 underline dark:text-blue-400" href="tel:+12013975495">(201) 397-5495</a> · 
+    <a class="text-blue-600 underline dark:text-blue-400" href="mailto:info@ajltechnj.com">info@ajltechnj.com</a> · 
     All rights reserved © ${new Date().getFullYear()}.
   `,
 };
