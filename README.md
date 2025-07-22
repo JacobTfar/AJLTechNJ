@@ -1,89 +1,108 @@
-# 🚀 AstroWind
+# � AJL Tech NJ
 
 <img src="https://raw.githubusercontent.com/onwidget/.github/main/resources/astrowind/lighthouse-score.png" align="right"
-     alt="AstroWind Lighthouse Score" width="100" height="358">
+     alt="AJL Tech NJ Lighthouse Score" width="100" height="358">
 
-🌟 _Most *starred* & *forked* Astro theme in 2022, 2023 & 2024_. 🌟
+⚡ **Professional Tech Support for North Jersey Homes & Businesses** ⚡
 
-**AstroWind** is a free and open-source template to make your website using **[Astro 5.0](https://astro.build/) + [Tailwind CSS](https://tailwindcss.com/)**. Ready to start a new project and designed taking into account web best practices.
+**AJL Tech NJ** is a professional technology support business serving North Jersey communities. Built using **[Astro 5.0](https://astro.build/) + [Tailwind CSS](https://tailwindcss.com/)**, our website showcases our comprehensive tech services with a focus on reliability and customer satisfaction.
 
-- ✅ **Production-ready** scores in **PageSpeed Insights** reports.
-- ✅ Integration with **Tailwind CSS** supporting **Dark mode** and **_RTL_**.
-- ✅ **Fast and SEO friendly blog** with automatic **RSS feed**, **MDX** support, **Categories & Tags**, **Social Share**, ...
-- ✅ **Image Optimization** (using new **Astro Assets** and **Unpic** for Universal image CDN).
-- ✅ Generation of **project sitemap** based on your routes.
-- ✅ **Open Graph tags** for social media sharing.
-- ✅ **Analytics** built-in Google Analytics, and Splitbee integration.
+- ✅ **Complete Tech Support** - Remote and on-site troubleshooting for all your technology needs
+- ✅ **Device Repairs** - Professional repair services for phones, tablets, and laptops
+- ✅ **Network Engineering** - Wi-Fi optimization, router setup, and custom LAN builds
+- ✅ **Security Systems** - Basic camera setup and configuration for home and office security
+- ✅ **Subscription Plans** - Ongoing tech support with priority service and maintenance
+- ✅ **Enterprise Experience** - Team with mission-critical systems experience from Newark Airport
 
 <br>
 
-![AstroWind Theme Screenshot](https://raw.githubusercontent.com/onwidget/.github/main/resources/astrowind/screenshot-astrowind-1.0.png)
+## 🌟 About AJL Tech NJ
 
-[![onWidget](https://custom-icon-badges.demolab.com/badge/made%20by%20-onWidget-556bf2?style=flat-square&logo=onwidget&logoColor=white&labelColor=101827)](https://onwidget.com)
-[![License](https://img.shields.io/github/license/onwidget/astrowind?style=flat-square&color=dddddd&labelColor=000000)](https://github.com/onwidget/astrowind/blob/main/LICENSE.md)
-[![Maintained](https://img.shields.io/badge/maintained%3F-yes-brightgreen.svg?style=flat-square)](https://github.com/onwidget)
-[![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat-square)](https://github.com/onwidget/astrowind#contributing)
-[![Known Vulnerabilities](https://snyk.io/test/github/onwidget/astrowind/badge.svg?style=flat-square)](https://snyk.io/test/github/onwidget/astrowind)
-[![Stars](https://img.shields.io/github/stars/onwidget/astrowind.svg?style=social&label=stars&maxAge=86400&color=ff69b4)](https://github.com/onwidget/astrowind)
-[![Forks](https://img.shields.io/github/forks/onwidget/astrowind.svg?style=social&label=forks&maxAge=86400&color=ff69b4)](https://github.com/onwidget/astrowind)
+Founded by Jorge Lamas, AJL Tech NJ brings enterprise-level technical expertise to North Jersey homes and businesses. Our team of three ambitious tech professionals combines years of experience working with mission-critical systems to provide reliable, honest, and affordable technology solutions.
+
+**Our Coverage Area:** Essex, Hudson, Bergen, Passaic, Union, and Morris counties
+
+**Contact:** (862) 312-5081
+
+[![AJL Tech NJ](https://custom-icon-badges.demolab.com/badge/AJL%20Tech-NJ-556bf2?style=flat-square&logo=tools&logoColor=white&labelColor=101827)](https://ajltechnj.com)
+[![License](https://img.shields.io/github/license/JacobTfar/AJLTechNJ?style=flat-square&color=dddddd&labelColor=000000)](https://github.com/JacobTfar/AJLTechNJ/blob/main/LICENSE.md)
+[![North Jersey](https://img.shields.io/badge/serving-North%20Jersey-brightgreen.svg?style=flat-square)](https://ajltechnj.com/about)
+[![Contact](https://img.shields.io/badge/call-862--312--5081-brightgreen.svg?style=flat-square)](tel:+18623125081)
 
 <br>
 
 <details open>
 <summary>Table of Contents</summary>
 
-- [Demo](#demo)
-- [Upcoming: AstroWind 2.0 – We Need Your Vision!](#-upcoming-astrowind-20--we-need-your-vision)
-- [TL;DR](#tldr)
-- [Getting started](#getting-started)
+- [About AJL Tech NJ](#-about-ajl-tech-nj)
+- [Our Services](#-our-services)
+- [Getting started with development](#getting-started)
   - [Project structure](#project-structure)
   - [Commands](#commands)
   - [Configuration](#configuration)
   - [Deploy](#deploy)
-- [Frequently Asked Questions](#frequently-asked-questions)
-- [Related Projects](#related-projects)
-- [Contributing](#contributing)
-- [Acknowledgements](#acknowledgements)
+- [Contact Information](#contact-information)
 - [License](#license)
 
 </details>
 
 <br>
 
+## 🛠️ Our Services
+
+**AJL Tech NJ** provides comprehensive technology support for North Jersey homes and businesses:
+
+### Core Services
+- **Tech Support** - Remote and on-site troubleshooting for all technology needs
+- **Device Repairs** - Professional repair services for phones, tablets, and laptops
+- **Network Engineering** - Wi-Fi optimization, router setup, and custom LAN builds
+- **Security Systems** - Basic camera setup and configuration
+- **PC Imaging & Setup** - Profile cloning, multi-system setup, and clean OS deployment
+- **Custom Solutions** - Tailored technology solutions for unique business needs
+
+### Subscription Plans
+- **Home Support** - $49/month for families and home offices
+- **Small Business** - $149/month for businesses with 1-10 employees
+- **Enterprise** - $299/month for larger businesses with comprehensive support
+
+**Service Area:** Essex, Hudson, Bergen, Passaic, Union, and Morris counties
+
+<br>
+
 ## Demo
 
-📌 [https://astrowind.vercel.app/](https://astrowind.vercel.app/)
+📌 [Visit AJL Tech NJ Website](https://ajltechnj.com/)
 
 <br>
 
-## 🔔 Upcoming: AstroWind 2.0 – We Need Your Vision!
+## 📞 Contact Information
 
-We're embarking on an exciting journey with **AstroWind 2.0**, and we want you to be a part of it! We're currently taking the first steps in developing this new version and your insights are invaluable. Join the discussion and share your feedback, ideas, and suggestions to help shape the future of **AstroWind**. Let's make **AstroWind 2.0** even better, together!
-
-[Share Your Feedback in Our Discussion!](https://github.com/onwidget/astrowind/discussions/392)
+- **Phone:** (862) 312-5081
+- **Website:** [ajltechnj.com](https://ajltechnj.com)
+- **Email:** Contact us through our website
+- **Service Area:** North Jersey (Essex, Hudson, Bergen, Passaic, Union, Morris counties)
 
 <br>
 
 
-## TL;DR
+## Getting Started (For Developers)
+
+This website is built with **AJL Tech NJ**'s branding and content using [Astro 5.0](https://astro.build/) + [Tailwind CSS](https://tailwindcss.com/). If you need to work on the website, here's how to get started:
 
 ```shell
-npm create astro@latest -- --template onwidget/astrowind
+git clone https://github.com/JacobTfar/AJLTechNJ.git
+cd AJLTechNJ
+npm install
+npm run dev
 ```
 
-## Getting started
-
-**AstroWind** tries to give you quick access to creating a website using [Astro 5.0](https://astro.build/) + [Tailwind CSS](https://tailwindcss.com/). It's a free theme which focuses on simplicity, good practices and high performance.
-
-Very little vanilla javascript is used only to provide basic functionality so that each developer decides which framework (React, Vue, Svelte, Solid JS...) to use and how to approach their goals.
-
-In this version the template supports all the options in the `output` configuration, `static`, `hybrid` and `server`, but the blog only works with `prerender = true`. We are working on the next version and aim to make it fully compatible with SSR.
+The website focuses on showcasing our professional tech support services with enterprise-level experience applied to residential and small business needs.
 
 ### Project structure
 
-Inside **AstroWind** template, you'll see the following folders and files:
+The **AJL Tech NJ** website follows standard Astro project structure:
 
-```
+```text
 /
 ├── public/
 │   ├── _headers
@@ -93,54 +112,31 @@ Inside **AstroWind** template, you'll see the following folders and files:
 │   │   ├── favicons/
 │   │   ├── images/
 │   │   └── styles/
-│   │       └── tailwind.css
 │   ├── components/
-│   │   ├── blog/
-│   │   ├── common/
-│   │   ├── ui/
 │   │   ├── widgets/
 │   │   │   ├── Header.astro
+│   │   │   ├── Footer.astro
 │   │   │   └── ...
-│   │   ├── CustomStyles.astro
-│   │   ├── Favicons.astro
-│   │   └── Logo.astro
-│   ├── content/
-│   │   ├── post/
-│   │   │   ├── post-slug-1.md
-│   │   │   ├── post-slug-2.mdx
-│   │   │   └── ...
-│   │   └-- config.ts
+│   │   └── ...
+│   ├── data/
+│   │   └── post/           # Blog posts about tech support
 │   ├── layouts/
-│   │   ├── Layout.astro
-│   │   ├── MarkdownLayout.astro
-│   │   └── PageLayout.astro
 │   ├── pages/
-│   │   ├── [...blog]/
-│   │   │   ├── [category]/
-│   │   │   ├── [tag]/
-│   │   │   ├── [...page].astro
-│   │   │   └── index.astro
-│   │   ├── index.astro
-│   │   ├── 404.astro
-│   │   ├-- rss.xml.ts
+│   │   ├── about.astro
+│   │   ├── services.astro
+│   │   ├── pricing.astro
+│   │   ├── subscription.astro
+│   │   ├── contact.astro
 │   │   └── ...
 │   ├── utils/
-│   ├── config.yaml
-│   └── navigation.js
+│   ├── config.yaml         # Site configuration
+│   └── navigation.ts       # Site navigation structure
 ├── package.json
 ├── astro.config.ts
 └── ...
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory if they do not require any transformation or in the `assets/` directory if they are imported directly.
-
-[![Edit AstroWind on CodeSandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://githubbox.com/onwidget/astrowind/tree/main) [![Open in Gitpod](https://svgshare.com/i/xdi.svg)](https://gitpod.io/?on=gitpod#https://github.com/onwidget/astrowind) [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/onwidget/astrowind)
-
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file `README.md`. Update `src/config.yaml` and contents. Have fun!
+All service pages, pricing information, and business content is customized for AJL Tech NJ's specific offerings and North Jersey market.
 
 <br>
 
@@ -272,32 +268,22 @@ Clone this repository on your own GitHub account and deploy it to Netlify:
 
 Clone this repository on your own GitHub account and deploy to Vercel:
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fonwidget%2Fastrowind)
+## Technical Details
 
-<br>
-
-## Frequently Asked Questions
-
-- Why?
--
--
-
-<br>
-
-## Related projects
-
-- [TailNext](https://tailnext.vercel.app/) - Free template using Next.js 14 and Tailwind CSS with the new App Router.
-- [Qwind](https://qwind.pages.dev/) - Free template to make your website using Qwik + Tailwind CSS.
-
-## Contributing
-
-If you have any ideas, suggestions or find any bugs, feel free to open a discussion, an issue or create a pull request.
-That would be very useful for all of us and we would be happy to listen and take action.
-
-## Acknowledgements
-
-Initially created by [onWidget](https://onwidget.com) and maintained by a community of [contributors](https://github.com/onwidget/astrowind/graphs/contributors).
+This website is built using:
+- **Astro 5.0** - Static site generator for fast performance
+- **Tailwind CSS** - Utility-first CSS framework
+- **TypeScript** - Type-safe development
+- **Responsive Design** - Mobile-first approach for all devices
 
 ## License
 
-**AstroWind** is licensed under the MIT license — see the [LICENSE](./LICENSE.md) file for details.
+**AJL Tech NJ** website is built on the AstroWind template, which is licensed under the MIT license — see the [LICENSE](./LICENSE.md) file for details.
+
+## About This Repository
+
+This repository contains the source code for the AJL Tech NJ business website. It showcases our professional tech support services, subscription plans, and contact information for North Jersey clients.
+
+**Built by:** Jacob Tapfar
+**For:** AJL Tech NJ - Professional Tech Support  
+**Serving:** North Jersey communities since 2015
