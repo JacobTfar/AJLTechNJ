@@ -17,7 +17,7 @@ The words of which the initial letter is capitalized have meanings defined under
 
 For the purposes of these Terms of Service:
 
-- **Company** (referred to as either "the Company", "We", "Us" or "Our" in this Agreement) refers to AJL Tech NJ, serving North Jersey including Essex, Hudson, Bergen, Passaic, Union, and Morris counties.
+- **Company** (referred to as either "the Company", "We", "Us" or "Our" in this Agreement) refers to AJL Tech NJ, serving North Arlington and surrounding North Jersey communities.
 
 - **Customer** or **You** means the individual or business entity that engages AJL Tech NJ for services.
 
@@ -46,7 +46,7 @@ AJL Tech NJ provides professional technology services including:
 
 ### Service Areas
 
-Our primary service area includes North Jersey counties: Essex, Hudson, Bergen, Passaic, Union, and Morris. Additional areas may be served at our discretion and may incur additional travel charges.
+Our primary service area includes North Arlington and surrounding North Jersey communities. Additional areas may be served at our discretion and may incur additional travel charges.
 
 ### Scheduling and Availability
 
@@ -174,7 +174,7 @@ For questions about these Terms of Service or our services:
 - **AJL Tech NJ**
 - **Phone**: (201) 397-5495
 - **Email**: [info@ajltechnj.com](mailto:info@ajltechnj.com)
-- **Service Area**: North Jersey (Essex, Hudson, Bergen, Passaic, Union, Morris Counties)
+- **Service Area**: North Arlington and surrounding North Jersey communities
 
 ---
 

@@ -20,14 +20,14 @@
 
 Founded by Jorge Lamas, AJL Tech NJ brings enterprise-level technical expertise to North Jersey homes and businesses. Our team of three ambitious tech professionals combines years of experience working with mission-critical systems to provide reliable, honest, and affordable technology solutions.
 
-**Our Coverage Area:** Essex, Hudson, Bergen, Passaic, Union, and Morris counties
+**Our Coverage Area:** North Arlington and surrounding North Jersey communities
 
-**Contact:** (862) 312-5081
+**Contact:** (201) 397-5495
 
 [![AJL Tech NJ](https://custom-icon-badges.demolab.com/badge/AJL%20Tech-NJ-556bf2?style=flat-square&logo=tools&logoColor=white&labelColor=101827)](https://ajltechnj.com)
 [![License](https://img.shields.io/github/license/JacobTfar/AJLTechNJ?style=flat-square&color=dddddd&labelColor=000000)](https://github.com/JacobTfar/AJLTechNJ/blob/main/LICENSE.md)
 [![North Jersey](https://img.shields.io/badge/serving-North%20Jersey-brightgreen.svg?style=flat-square)](https://ajltechnj.com/about)
-[![Contact](https://img.shields.io/badge/call-862--312--5081-brightgreen.svg?style=flat-square)](tel:+18623125081)
+[![Contact](https://img.shields.io/badge/call-201--397--5495-brightgreen.svg?style=flat-square)](tel:+12013975495)
 
 <br>
 
@@ -65,7 +65,7 @@ Founded by Jorge Lamas, AJL Tech NJ brings enterprise-level technical expertise 
 - **Small Business** - $149/month for businesses with 1-10 employees
 - **Enterprise** - $299/month for larger businesses with comprehensive support
 
-**Service Area:** Essex, Hudson, Bergen, Passaic, Union, and Morris counties
+**Service Area:** North Arlington and surrounding North Jersey communities
 
 <br>
 
@@ -77,10 +77,10 @@ Founded by Jorge Lamas, AJL Tech NJ brings enterprise-level technical expertise 
 
 ## 📞 Contact Information
 
-- **Phone:** (862) 312-5081
+- **Phone:** (201) 397-5495
 - **Website:** [ajltechnj.com](https://ajltechnj.com)
 - **Email:** Contact us through our website
-- **Service Area:** North Jersey (Essex, Hudson, Bergen, Passaic, Union, Morris counties)
+- **Service Area:** North Arlington and surrounding North Jersey communities
 
 <br>
 

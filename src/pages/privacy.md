@@ -20,7 +20,7 @@ The words of which the initial letter is capitalized have meanings defined under
 For the purposes of this Privacy Policy:
 
 - **Account** means a unique account created for you to access our services or parts of our services.
-- **Company** (referred to as either "the Company", "We", "Us" or "Our" in this Agreement) refers to AJL Tech NJ, serving North Jersey including Essex, Hudson, Bergen, Passaic, Union, and Morris counties.
+- **Company** (referred to as either "the Company", "We", "Us" or "Our" in this Agreement) refers to AJL Tech NJ, serving North Arlington and surrounding North Jersey communities.
 - **Device** means any device that can access our services or that we provide technical support for, such as a computer, smartphone, tablet, or networking equipment.
 - **Personal Data** is any information that relates to an identified or identifiable individual.
 - **Service** refers to the technology support, device repair, network installation, and related services provided by AJL Tech NJ.
@@ -142,7 +142,7 @@ If you have any questions about this Privacy Policy or our privacy practices, pl
 - **AJL Tech NJ**
 - **Phone**: (201) 397-5495
 - **Email**: [info@ajltechnj.com](mailto:info@ajltechnj.com)
-- **Service Area**: North Jersey (Essex, Hudson, Bergen, Passaic, Union, Morris Counties)
+- **Service Area**: North Arlington and surrounding North Jersey communities
 
 ---
 

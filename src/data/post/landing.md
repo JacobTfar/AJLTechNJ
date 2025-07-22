@@ -105,7 +105,7 @@ You don't need to struggle with technology problems alone. Call us when:
 - You're not comfortable troubleshooting hardware
 - You need help preventing future issues
 
-We serve Essex, Hudson, Bergen, Passaic, Union, and Morris counties with both remote support and on-site service calls.
+We serve North Arlington and surrounding North Jersey communities with both remote support and on-site service calls.
 
 *Experiencing any of these common issues? Contact AJL Tech NJ at (201) 397-5495. We'll diagnose the real problem and fix it right the first time.*
 
