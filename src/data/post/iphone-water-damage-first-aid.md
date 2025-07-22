@@ -37,7 +37,7 @@ Remove your phone from the water source and immediately:
 2. **Remove SIM card** - Pop out the SIM tray if you can do it quickly
 3. **Remove any accessories** - Lightning cables, wireless chargers, etc.
 
-**Pro tip:** If you have an older iPhone with a removable battery, take it out immediately. For newer iPhones, don't try to open the device yourself—you'll likely cause more damage.
+**Important:** Don't try to open your iPhone or remove the battery yourself. iPhones are designed with non-removable batteries and attempting to open the device will void your warranty and likely cause additional damage.
 
 ## Step 3: Initial Drying (2-5 minutes)
 

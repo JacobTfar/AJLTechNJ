@@ -72,9 +72,9 @@ Emergency IT repairs are expensive—often 3-5 times more costly than preventive
 - Higher chance of data loss
 - Shorter hardware lifespan due to poor maintenance
 
-## The Newark Airport Standard
+## The Airport Systems Experience
 
-At Newark Airport, we maintained systems that absolutely could not fail. The same principles that kept United Airlines' operations running smoothly can protect your business:
+From our experience working with and supporting United Airlines' critical systems at Newark Airport, we learned principles that kept airline operations running smoothly and can protect your business:
 
 - **Proactive monitoring** catches problems before they cause downtime
 - **Regular maintenance** prevents expensive emergency repairs
