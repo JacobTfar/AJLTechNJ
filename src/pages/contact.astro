@@ -142,7 +142,7 @@ const metadata = {
   });
 
   // Backup: Try again after window loads (in case of timing issues)
-  window.addEventListener('load', function() {
+  window.addEventListener('load', function () {
     if (!document.getElementById('contactForm')) {
       console.log('Trying alternative form selection...');
       const forms = document.querySelectorAll('form');
@@ -153,7 +153,7 @@ const metadata = {
         form.addEventListener('submit', function (event) {
           console.log('Backup form handler triggered!');
           event.preventDefault();
-          
+
           // Send via EmailJS (same logic as above)
           emailjs
             .sendForm('service_rqrfp3j', 'template_nobdnyg', form)
