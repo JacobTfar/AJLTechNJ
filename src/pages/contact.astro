@@ -21,17 +21,18 @@ const metadata = {
     inputs={[
       {
         type: 'text',
-        name: 'name',
+        name: 'from_name',
         label: 'Name',
       },
       {
         type: 'email',
-        name: 'email',
+        name: 'from_email',
         label: 'Email',
       },
     ]}
     textarea={{
       label: 'Message',
+      name: 'message',
     }}
     disclaimer={{
       label:
@@ -96,6 +97,13 @@ const metadata = {
       form.addEventListener('submit', function (event) {
         event.preventDefault();
 
+        // Debug: Log form data
+        const formData = new FormData(form);
+        console.log('Form data being sent:');
+        for (const [key, value] of formData.entries()) {
+          console.log(key + ': ' + value);
+        }
+
         // Change button text to show loading
         const submitButton = form.querySelector('button[type="submit"]') || form.querySelector('input[type="submit"]');
         const originalText = submitButton.textContent || submitButton.value;
@@ -107,12 +115,14 @@ const metadata = {
           .sendForm('service_rqrfp3j', 'template_nobdnyg', form)
           .then(function (response) {
             console.log('SUCCESS!', response.status, response.text);
+            console.log('Email sent to EmailJS successfully');
             alert("Message sent successfully! We'll get back to you within 24 hours.");
             form.reset();
           })
           .catch(function (error) {
-            console.log('FAILED...', error);
-            alert('Failed to send message. Please email us directly at info@ajltechnj.com');
+            console.error('FAILED...', error);
+            console.error('Error details:', error.text || error.message);
+            alert('Failed to send message. Please try again or email us directly at info@ajltechnj.com');
           })
           .finally(function () {
             // Reset button
