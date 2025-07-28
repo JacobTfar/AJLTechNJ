@@ -16,6 +16,7 @@ As a tech support specialist serving North Jersey for over a decade, I see the s
 **The Problem**: This is easily our #1 call. Computers that once started up in seconds now take minutes, and simple tasks feel like waiting for molasses.
 
 **Common Causes**:
+
 - Too many startup programs running automatically
 - Hard drive nearly full (especially on older computers with traditional hard drives)
 - Malware or unwanted software running in the background
@@ -30,6 +31,7 @@ As a tech support specialist serving North Jersey for over a decade, I see the s
 **The Problem**: "The internet is down" or "Wi-Fi keeps dropping" - these calls spike especially during bad weather or when everyone's working from home.
 
 **Common Causes**:
+
 - Router overheating or needing a restart
 - Interference from neighboring networks
 - Outdated router firmware
@@ -44,6 +46,7 @@ As a tech support specialist serving North Jersey for over a decade, I see the s
 **The Problem**: Can't access email, forgot passwords, or suspicious login attempts have locked accounts.
 
 **What We See**:
+
 - Password requirements changing without warning
 - Two-factor authentication causing confusion
 - Email providers updating security settings
@@ -58,6 +61,7 @@ As a tech support specialist serving North Jersey for over a decade, I see the s
 **The Problem**: Cracked screens, water damage, phones that won't charge, or devices that suddenly stop working.
 
 **What We Handle**:
+
 - Screen replacements (especially after North Jersey winters when phones slip on ice)
 - Charging port repairs
 - Battery replacements
@@ -71,6 +75,7 @@ As a tech support specialist serving North Jersey for over a decade, I see the s
 **The Problem**: Printers that won't connect, print slowly, or produce poor quality output.
 
 **Why Printers Are Tricky**:
+
 - They're often the oldest device on your network
 - Driver software becomes outdated
 - Network settings change when routers are replaced
@@ -107,7 +112,7 @@ You don't need to struggle with technology problems alone. Call us when:
 
 We serve North Arlington and surrounding North Jersey communities with both remote support and on-site service calls.
 
-*Experiencing any of these common issues? Contact AJL Tech NJ at (201) 397-5495. We'll diagnose the real problem and fix it right the first time.*
+_Experiencing any of these common issues? Contact AJL Tech NJ at (201) 397-5495. We'll diagnose the real problem and fix it right the first time._
 
 ## The Power of Precision
 

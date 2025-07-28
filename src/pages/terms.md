@@ -145,6 +145,7 @@ We are not liable for delays or inability to perform due to circumstances beyond
 ### Service Refusal
 
 We reserve the right to refuse service for:
+
 - Unsafe working conditions
 - Abusive or threatening behavior
 - Illegal activities or requests

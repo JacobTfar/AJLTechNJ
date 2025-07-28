@@ -22,19 +22,25 @@ As someone who has managed critical network infrastructure at Newark Airport, I'
 The key to safely restarting your home network is following the correct order. Here's the step-by-step process I recommend to all my North Jersey clients:
 
 ### Step 1: Power Down in Reverse Order
+
 Start by turning off devices in the reverse order of how data flows through your network:
+
 1. **Computers and devices** - Turn off laptops, phones, smart TVs, etc.
 2. **Wi-Fi router** - Unplug your wireless router
 3. **Modem** - Finally, unplug your cable/DSL modem
 
 ### Step 2: Wait It Out
+
 This is the step most people skip, but it's crucial. Wait **at least 30 seconds** after unplugging everything. This allows:
+
 - Capacitors to fully discharge
 - Your ISP to reset your connection
 - Network caches to clear
 
 ### Step 3: Power Up in Forward Order
+
 Now restart everything in the correct sequence:
+
 1. **Modem first** - Plug in and wait 2-3 minutes for all lights to stabilize
 2. **Router second** - Plug in your Wi-Fi router and wait 2-3 minutes
 3. **Devices last** - Turn on computers, phones, and other devices
@@ -72,7 +78,7 @@ While this restart process solves about 70% of home network issues, some problem
 
 Remember, a properly functioning home network shouldn't require frequent restarts. If you're rebooting more than once a month, it's time to investigate the underlying cause.
 
-*Need help with persistent network issues? AJL Tech NJ provides professional network troubleshooting and optimization services throughout North Jersey. Contact us for a comprehensive network assessment.*
+_Need help with persistent network issues? AJL Tech NJ provides professional network troubleshooting and optimization services throughout North Jersey. Contact us for a comprehensive network assessment._
 
 - Habitasse duis sociis sagittis cursus, ante dictumst commodo.
 

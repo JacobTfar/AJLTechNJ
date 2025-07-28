@@ -37,12 +37,8 @@ export const headerData = {
       ],
     },
   ],
-  actions: [
-    { text: 'Request Service', href: getPermalink('/contact'), target: '_self' },
-  ],
+  actions: [{ text: 'Request Service', href: getPermalink('/contact'), target: '_self' }],
 };
-
-
 
 export const footerData = {
   links: [

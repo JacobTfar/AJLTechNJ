@@ -82,19 +82,20 @@ const metadata = {
 </Layout>
 
 <!-- EmailJS Integration -->
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-<script type="text/javascript">
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js" is:inline
+></script>
+<script type="text/javascript" is:inline>
   // Initialize EmailJS with your public key
   emailjs.init('Ck9gkjhX0wmiVatpv');
 
   // Handle form submission
-  document.addEventListener('DOMContentLoaded', function() {
+  document.addEventListener('DOMContentLoaded', function () {
     const form = document.getElementById('form');
-    
+
     if (form) {
-      form.addEventListener('submit', function(event) {
+      form.addEventListener('submit', function (event) {
         event.preventDefault();
-        
+
         // Change button text to show loading
         const submitButton = form.querySelector('button[type="submit"]') || form.querySelector('input[type="submit"]');
         const originalText = submitButton.textContent || submitButton.value;
@@ -102,17 +103,18 @@ const metadata = {
         submitButton.disabled = true;
 
         // Send email using EmailJS
-        emailjs.sendForm('service_rqrfp3j', 'template_nobdnyg', form)
-          .then(function(response) {
+        emailjs
+          .sendForm('service_rqrfp3j', 'template_nobdnyg', form)
+          .then(function (response) {
             console.log('SUCCESS!', response.status, response.text);
-            alert('Message sent successfully! We\'ll get back to you within 24 hours.');
+            alert("Message sent successfully! We'll get back to you within 24 hours.");
             form.reset();
           })
-          .catch(function(error) {
+          .catch(function (error) {
             console.log('FAILED...', error);
             alert('Failed to send message. Please email us directly at info@ajltechnj.com');
           })
-          .finally(function() {
+          .finally(function () {
             // Reset button
             submitButton.textContent = originalText;
             submitButton.disabled = false;

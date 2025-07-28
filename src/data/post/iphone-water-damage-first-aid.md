@@ -42,12 +42,14 @@ Remove your phone from the water source and immediately:
 ## Step 3: Initial Drying (2-5 minutes)
 
 **DO:**
+
 - Gently shake the phone to remove water from ports
 - Pat dry with a clean, lint-free cloth
 - Hold the phone with Lightning port facing down to let gravity help
 - Use a can of compressed air to blow water out of ports (if available)
 
 **DON'T:**
+
 - Use a hair dryer or heat source
 - Put it in rice (I'll explain why this doesn't work later)
 - Press any buttons unnecessarily
@@ -58,15 +60,19 @@ Remove your phone from the water source and immediately:
 Having repaired hundreds of water-damaged phones, these are the mistakes that turn a recoverable situation into a total loss:
 
 ### Never Use Heat
+
 Hair dryers, ovens, radiators, or leaving it in a hot car can:
+
 - Cause condensation to form inside the device
 - Warp internal components
 - Damage the screen and camera lenses
 
 ### Don't Try the Rice Trick
+
 This old myth needs to die. Rice doesn't actively pull moisture from electronics, and the small particles can actually get stuck in your ports. I've had to clean rice out of charging ports before attempting repairs.
 
 ### Don't Turn It On "Just to Check"
+
 This is the #1 mistake I see. Every time you power on a wet device, you risk permanent damage. Resist the urge for at least 48 hours.
 
 ## The First Hour After Water Damage
@@ -123,4 +129,4 @@ If your iPhone has suffered water damage, time is critical. AJL Tech NJ offers e
 
 Don't wait—every hour counts when it comes to water damage recovery.
 
-*Need immediate help with a water-damaged device? Contact AJL Tech NJ for emergency water damage treatment. We're equipped with professional ultrasonic cleaning equipment and offer the best chance of data recovery.*
+_Need immediate help with a water-damaged device? Contact AJL Tech NJ for emergency water damage treatment. We're equipped with professional ultrasonic cleaning equipment and offer the best chance of data recovery._

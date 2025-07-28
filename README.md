@@ -53,6 +53,7 @@ Founded by Jorge Lamas, AJL Tech NJ brings enterprise-level technical expertise 
 **AJL Tech NJ** provides comprehensive technology support for North Jersey homes and businesses:
 
 ### Core Services
+
 - **Tech Support** - Remote and on-site troubleshooting for all technology needs
 - **Device Repairs** - Professional repair services for phones, tablets, and laptops
 - **Network Engineering** - Wi-Fi optimization, router setup, and custom LAN builds
@@ -61,6 +62,7 @@ Founded by Jorge Lamas, AJL Tech NJ brings enterprise-level technical expertise 
 - **Custom Solutions** - Tailored technology solutions for unique business needs
 
 ### Subscription Plans
+
 - **Home Support** - $49/month for families and home offices
 - **Small Business** - $149/month for businesses with 1-10 employees
 - **Enterprise** - $299/month for larger businesses with comprehensive support
@@ -83,7 +85,6 @@ Founded by Jorge Lamas, AJL Tech NJ brings enterprise-level technical expertise 
 - **Service Area:** North Arlington and surrounding North Jersey communities
 
 <br>
-
 
 ## Getting Started (For Developers)
 
@@ -271,6 +272,7 @@ Clone this repository on your own GitHub account and deploy to Vercel:
 ## Technical Details
 
 This website is built using:
+
 - **Astro 5.0** - Static site generator for fast performance
 - **Tailwind CSS** - Utility-first CSS framework
 - **TypeScript** - Type-safe development

@@ -98,4 +98,4 @@ If you recognized your business in any of these warning signs, it's time to take
 
 Don't wait for a major disaster to realize you need professional IT support. The businesses that thrive in North Jersey's competitive market are those that treat technology as a strategic advantage, not a necessary evil.
 
-*Ready to transform your business technology from a source of stress into a competitive advantage? AJL Tech NJ provides comprehensive IT assessments and support plans for North Jersey businesses. Contact us to schedule your technology evaluation.*
+_Ready to transform your business technology from a source of stress into a competitive advantage? AJL Tech NJ provides comprehensive IT assessments and support plans for North Jersey businesses. Contact us to schedule your technology evaluation._

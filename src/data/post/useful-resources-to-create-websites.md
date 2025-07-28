@@ -60,7 +60,7 @@ Setting up business technology correctly the first time saves money and headache
 
 From initial consultation to ongoing support, we ensure your technology works for your business, not against it.
 
-*Have questions about business tech tools? Contact AJL Tech NJ at (201) 397-5495 for personalized recommendations based on your specific needs.*
+_Have questions about business tech tools? Contact AJL Tech NJ at (201) 397-5495 for personalized recommendations based on your specific needs._
 
 - Montes cursus habitant risus platea senectus, lectus sagittis mi.
 

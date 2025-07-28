@@ -11,7 +11,7 @@ metadata:
   title:
     default: AJL Tech NJ
     template: '%s — AJL Tech NJ'
-  description: "Reliable tech support for North Jersey — specializing in device repairs, security installs, network setup, and on-site solutions."
+  description: 'Reliable tech support for North Jersey — specializing in device repairs, security installs, network setup, and on-site solutions.'
   robots:
     index: true
     follow: true
@@ -66,7 +66,7 @@ apps:
 analytics:
   vendors:
     googleAnalytics:
-      id: "G-MKXM07352F" # AJL Tech NJ Google Analytics tracking ID
+      id: 'G-MKXM07352F' # AJL Tech NJ Google Analytics tracking ID
 
 ui:
   theme: 'system' # Values: "system" | "light" | "dark" | "light:only" | "dark:only"

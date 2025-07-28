@@ -44,6 +44,7 @@ If ethernet is fast but Wi-Fi is slow, you have a wireless problem. If both are 
 In dense areas like Jersey City, Hoboken, or Newark, dozens of Wi-Fi networks compete for the same airspace. Your router might be broadcasting on the same channel as five neighbors, causing massive slowdowns.
 
 **Quick Fix:**
+
 - Log into your router (usually 192.168.1.1 or 192.168.0.1)
 - Change your Wi-Fi channel to 1, 6, or 11 (for 2.4GHz)
 - For 5GHz, try channels 36, 40, 44, or 48
@@ -66,7 +67,8 @@ I regularly find routers hidden in basements, closets, or behind TVs. Your route
 Older devices and many smart home gadgets use the crowded 2.4GHz band. If your router supports 5GHz, make sure your devices are using it.
 
 **Check your connections:**
-- Look for network names ending in "_5G" or "5GHz"
+
+- Look for network names ending in "\_5G" or "5GHz"
 - Connect laptops, phones, and streaming devices to 5GHz
 - Leave smart home devices on 2.4GHz (they usually can't use 5GHz anyway)
 
@@ -90,15 +92,19 @@ Sometimes the problem isn't your equipment—it's your internet provider. This i
 ## DIY Fixes You Can Try Today
 
 ### Router Restart (The Classic)
+
 Unplug for 30 seconds, plug back in, wait 2 minutes. This clears temporary issues and often provides immediate improvement.
 
 ### Update Router Firmware
+
 Log into your router's admin panel and check for firmware updates. Security and performance improvements are released regularly.
 
 ### Password Check
+
 If neighbors are using your Wi-Fi, it will definitely slow down. Make sure you're using WPA3 or WPA2 security with a strong password.
 
 ### Device Limit Assessment
+
 Count your connected devices. Many older routers struggle with more than 15-20 active connections. With smart TVs, phones, tablets, smart home devices, and computers, it adds up quickly.
 
 ## When to Call for Professional Help
@@ -128,4 +134,4 @@ Most Wi-Fi slowdowns have simple fixes, but the dense, urban environment of Nort
 
 Your internet connection is too important to your productivity and quality of life to accept poor performance.
 
-*Still dealing with slow Wi-Fi after trying these fixes? AJL Tech NJ provides professional network optimization and Wi-Fi troubleshooting throughout North Jersey. We'll diagnose the real problem and implement a lasting solution.*
+_Still dealing with slow Wi-Fi after trying these fixes? AJL Tech NJ provides professional network optimization and Wi-Fi troubleshooting throughout North Jersey. We'll diagnose the real problem and implement a lasting solution._
