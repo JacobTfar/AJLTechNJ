@@ -123,7 +123,7 @@ const metadata = {
       const submitButton = form.querySelector('button[type="submit"]');
       if (submitButton) {
         console.log('Found submit button, adding click handler');
-        submitButton.addEventListener('click', function(event) {
+        submitButton.addEventListener('click', function (event) {
           console.log('Submit button clicked!');
           event.preventDefault();
           event.stopPropagation();
@@ -141,7 +141,7 @@ const metadata = {
 
   function handleFormSubmission(form) {
     console.log('Processing form submission...');
-    
+
     // Get form data
     const formData = new FormData(form);
     console.log('Form data:');
@@ -152,7 +152,7 @@ const metadata = {
     // Update button state
     const submitButton = form.querySelector('button[type="submit"]');
     const originalText = submitButton ? submitButton.textContent : 'Contact us';
-    
+
     if (submitButton) {
       submitButton.textContent = 'Sending...';
       submitButton.disabled = true;
@@ -186,7 +186,7 @@ const metadata = {
   }
 
   window.addEventListener('load', setupFormHandler);
-  
+
   // Also try after small delays
   setTimeout(setupFormHandler, 100);
   setTimeout(setupFormHandler, 500);
