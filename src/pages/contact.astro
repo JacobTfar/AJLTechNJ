@@ -100,35 +100,31 @@ const metadata = {
       const form = forms[0];
       console.log('Working with form:', form);
 
-      // Remove any existing handlers
-      const newForm = form.cloneNode(true);
-      form.parentNode.replaceChild(newForm, form);
+      // Find the submit button (input type="submit")
+      const submitButton = form.querySelector('input[type="submit"]');
+      console.log('Found submit button:', submitButton);
 
-      // Prevent default form submission completely
-      newForm.onsubmit = function (e) {
-        console.log('Form onsubmit triggered - preventing default');
+      // Handle form submission
+      form.addEventListener('submit', function (e) {
+        console.log('Form submit event triggered');
         e.preventDefault();
         e.stopPropagation();
-        sendEmail(newForm);
+        sendEmail(form);
         return false;
-      };
-
-      // Also handle button clicks
-      const buttons = newForm.querySelectorAll('button');
-      console.log('Found buttons:', buttons.length);
-
-      buttons.forEach((button) => {
-        console.log('Adding click handler to button:', button);
-        button.onclick = function (e) {
-          console.log('Button clicked - preventing default and sending email');
-          e.preventDefault();
-          e.stopPropagation();
-          sendEmail(newForm);
-          return false;
-        };
       });
 
-      console.log('Form intercepted successfully');
+      // Also handle submit button clicks directly
+      if (submitButton) {
+        submitButton.addEventListener('click', function (e) {
+          console.log('Submit button clicked');
+          e.preventDefault();
+          e.stopPropagation();
+          sendEmail(form);
+          return false;
+        });
+      }
+
+      console.log('Form event handlers attached successfully');
     } else {
       console.error('No forms found!');
     }
@@ -144,13 +140,13 @@ const metadata = {
       console.log(`${key}: ${value}`);
     }
 
-    // Update button
-    const button = form.querySelector('button');
-    const originalText = button ? button.textContent : 'Contact us';
+    // Update submit button
+    const submitButton = form.querySelector('input[type="submit"]');
+    const originalValue = submitButton ? submitButton.value : 'Send Email';
 
-    if (button) {
-      button.textContent = 'Sending...';
-      button.disabled = true;
+    if (submitButton) {
+      submitButton.value = 'Sending...';
+      submitButton.disabled = true;
     }
 
     console.log('Sending via EmailJS...');
@@ -168,9 +164,9 @@ const metadata = {
         alert('Failed to send message. Please try again or email us directly at info@ajltechnj.com');
       })
       .finally(function () {
-        if (button) {
-          button.textContent = originalText;
-          button.disabled = false;
+        if (submitButton) {
+          submitButton.value = originalValue;
+          submitButton.disabled = false;
         }
       });
   }
@@ -178,22 +174,19 @@ const metadata = {
   // Try multiple times to catch the form
   console.log('Setting up form interception...');
 
-  // Try immediately
-  interceptForm();
-
   // Try when DOM is ready
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', interceptForm);
+  } else {
+    interceptForm();
   }
 
   // Try when window loads
   window.addEventListener('load', interceptForm);
 
   // Try with delays
-  setTimeout(interceptForm, 100);
   setTimeout(interceptForm, 500);
   setTimeout(interceptForm, 1000);
-  setTimeout(interceptForm, 2000);
 
   console.log('EmailJS script setup complete');
 </script>
