@@ -85,110 +85,114 @@ const metadata = {
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js" is:inline
 ></script>
 <script type="text/javascript" is:inline>
-  // Initialize EmailJS with your correct public key
+  console.log('EmailJS script loading...');
+  
+  // Initialize EmailJS immediately
   emailjs.init('iFk6dR2JaXJllcyJj');
+  console.log('EmailJS initialized with public key');
 
-  let formHandlerAttached = false;
-
-  function setupFormHandler() {
-    if (formHandlerAttached) {
-      console.log('Form handler already attached, skipping...');
-      return;
-    }
-
-    console.log('Setting up form handler...');
+  function interceptForm() {
+    console.log('Looking for forms...');
     const forms = document.querySelectorAll('form');
     console.log('Found forms:', forms.length);
 
     if (forms.length > 0) {
       const form = forms[0];
-      console.log('Selected form:', form);
+      console.log('Working with form:', form);
 
-      // Add ID if missing
-      if (!form.id) {
-        form.id = 'contact-form';
-        console.log('Added ID to form');
-      }
+      // Remove any existing handlers
+      const newForm = form.cloneNode(true);
+      form.parentNode.replaceChild(newForm, form);
 
-      // Handle form submission
-      form.addEventListener('submit', function (event) {
-        console.log('Form submission intercepted by EmailJS!');
-        event.preventDefault();
-        event.stopPropagation();
-        handleFormSubmission(form);
+      // Prevent default form submission completely
+      newForm.onsubmit = function(e) {
+        console.log('Form onsubmit triggered - preventing default');
+        e.preventDefault();
+        e.stopPropagation();
+        sendEmail(newForm);
         return false;
+      };
+
+      // Also handle button clicks
+      const buttons = newForm.querySelectorAll('button');
+      console.log('Found buttons:', buttons.length);
+      
+      buttons.forEach(button => {
+        console.log('Adding click handler to button:', button);
+        button.onclick = function(e) {
+          console.log('Button clicked - preventing default and sending email');
+          e.preventDefault();
+          e.stopPropagation();
+          sendEmail(newForm);
+          return false;
+        };
       });
 
-      // Handle button clicks directly
-      const submitButton = form.querySelector('button[type="submit"]');
-      if (submitButton) {
-        console.log('Found submit button, adding click handler');
-        submitButton.addEventListener('click', function (event) {
-          console.log('Submit button clicked!');
-          event.preventDefault();
-          event.stopPropagation();
-          handleFormSubmission(form);
-          return false;
-        });
-      }
-
-      formHandlerAttached = true;
-      console.log('Form handler attached successfully');
+      console.log('Form intercepted successfully');
     } else {
-      console.error('No forms found on page!');
+      console.error('No forms found!');
     }
   }
 
-  function handleFormSubmission(form) {
-    console.log('Processing form submission...');
-
-    // Get form data
+  function sendEmail(form) {
+    console.log('sendEmail function called');
+    
+    // Show form data
     const formData = new FormData(form);
     console.log('Form data:');
     for (const [key, value] of formData.entries()) {
       console.log(`${key}: ${value}`);
     }
 
-    // Update button state
-    const submitButton = form.querySelector('button[type="submit"]');
-    const originalText = submitButton ? submitButton.textContent : 'Contact us';
-
-    if (submitButton) {
-      submitButton.textContent = 'Sending...';
-      submitButton.disabled = true;
+    // Update button
+    const button = form.querySelector('button');
+    const originalText = button ? button.textContent : 'Contact us';
+    
+    if (button) {
+      button.textContent = 'Sending...';
+      button.disabled = true;
     }
 
-    // Send email via EmailJS
-    emailjs
-      .sendForm('service_rqrfp3j', 'template_nobdnyg', form)
-      .then(function (response) {
-        console.log('EmailJS SUCCESS:', response);
-        alert("Message sent successfully! We'll get back to you within 24 hours.");
+    console.log('Sending via EmailJS...');
+    
+    // Send with EmailJS
+    emailjs.sendForm('service_rqrfp3j', 'template_nobdnyg', form)
+      .then(function(response) {
+        console.log('SUCCESS!', response);
+        alert('Message sent successfully! We\'ll get back to you within 24 hours.');
         form.reset();
       })
-      .catch(function (error) {
-        console.error('EmailJS ERROR:', error);
+      .catch(function(error) {
+        console.error('ERROR!', error);
         alert('Failed to send message. Please try again or email us directly at info@ajltechnj.com');
       })
-      .finally(function () {
-        if (submitButton) {
-          submitButton.textContent = originalText;
-          submitButton.disabled = false;
+      .finally(function() {
+        if (button) {
+          button.textContent = originalText;
+          button.disabled = false;
         }
       });
   }
 
-  // Multiple attempts to catch the form
+  // Try multiple times to catch the form
+  console.log('Setting up form interception...');
+  
+  // Try immediately
+  interceptForm();
+  
+  // Try when DOM is ready
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', setupFormHandler);
-  } else {
-    setupFormHandler();
+    document.addEventListener('DOMContentLoaded', interceptForm);
   }
+  
+  // Try when window loads
+  window.addEventListener('load', interceptForm);
+  
+  // Try with delays
+  setTimeout(interceptForm, 100);
+  setTimeout(interceptForm, 500);
+  setTimeout(interceptForm, 1000);
+  setTimeout(interceptForm, 2000);
 
-  window.addEventListener('load', setupFormHandler);
-
-  // Also try after small delays
-  setTimeout(setupFormHandler, 100);
-  setTimeout(setupFormHandler, 500);
-  setTimeout(setupFormHandler, 1000);
+  console.log('EmailJS script setup complete');
 </script>

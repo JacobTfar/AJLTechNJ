@@ -1,11 +1,10 @@
 ---
 import type { Form as Props } from '~/types';
-import Button from '~/components/ui/Button.astro';
 
-const { inputs, textarea, disclaimer, button = 'Contact us', description = '', id } = Astro.props;
+const { inputs, textarea, disclaimer, button = 'Send Email', description = '', id } = Astro.props;
 ---
 
-<form id={id} onsubmit="return false;">
+<form id={id}>
   {
     inputs &&
       inputs.map(
@@ -19,7 +18,7 @@ const { inputs, textarea, disclaimer, button = 'Contact us', description = '', i
               )}
               <input
                 type={type}
-                name={name}
+                name={name === 'name' ? 'from_name' : name === 'email' ? 'from_email' : name}
                 id={name}
                 autocomplete={autocomplete}
                 placeholder={placeholder}
@@ -32,13 +31,13 @@ const { inputs, textarea, disclaimer, button = 'Contact us', description = '', i
 
   {
     textarea && (
-      <div>
-        <label for="textarea" class="block text-sm font-medium">
+      <div class="mb-6">
+        <label for="message" class="block text-sm font-medium">
           {textarea.label}
         </label>
         <textarea
-          id="textarea"
-          name={textarea.name ? textarea.name : 'message'}
+          id="message"
+          name="message"
           rows={textarea.rows ? textarea.rows : 4}
           placeholder={textarea.placeholder}
           class="py-3 px-4 block w-full text-md rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-slate-900"
@@ -49,13 +48,13 @@ const { inputs, textarea, disclaimer, button = 'Contact us', description = '', i
 
   {
     disclaimer && (
-      <div class="mt-3 flex items-start">
+      <div class="mt-3 flex items-start mb-6">
         <div class="flex mt-0.5">
           <input
             id="disclaimer"
             name="disclaimer"
             type="checkbox"
-            class="cursor-pointer mt-1 py-3 px-4 block w-full text-md rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-slate-900"
+            class="cursor-pointer mt-1 w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded"
           />
         </div>
         <div class="ml-3">
@@ -67,15 +66,14 @@ const { inputs, textarea, disclaimer, button = 'Contact us', description = '', i
     )
   }
 
-  {
-    button && (
-      <div class="mt-10 grid">
-        <Button variant="primary" type="submit">
-          {button}
-        </Button>
-      </div>
-    )
-  }
+  <div class="mt-10 grid">
+    <input 
+      type="submit" 
+      id="button" 
+      value={button}
+      class="cursor-pointer py-3 px-6 text-white bg-blue-600 hover:bg-blue-700 rounded-lg font-medium transition-colors"
+    />
+  </div>
 
   {
     description && (
