@@ -88,35 +88,51 @@ const metadata = {
   // Initialize EmailJS with your public key
   emailjs.init('Ck9gkjhX0wmiVatpv');
 
-  // More robust form handler - looks for any form on the page
+  let formHandlerAttached = false;
+
   function setupFormHandler() {
+    if (formHandlerAttached) {
+      console.log('Form handler already attached, skipping...');
+      return;
+    }
+
     console.log('Setting up form handler...');
     const forms = document.querySelectorAll('form');
     console.log('Found forms:', forms.length);
 
     if (forms.length > 0) {
-      const form = forms[0]; // Get the first (and likely only) form
+      const form = forms[0];
       console.log('Selected form:', form);
 
+      // Remove onsubmit attribute and add our handler
+      form.removeAttribute('onsubmit');
+      
       // Add ID if missing
       if (!form.id) {
         form.id = 'contact-form';
         console.log('Added ID to form');
       }
 
-      form.addEventListener('submit', function (event) {
-        console.log('Form submission intercepted!');
+      // Remove any existing event listeners by cloning the form
+      const newForm = form.cloneNode(true);
+      form.parentNode.replaceChild(newForm, form);
+
+      newForm.addEventListener('submit', function (event) {
+        console.log('Form submission intercepted by EmailJS!');
         event.preventDefault();
+        event.stopPropagation();
 
         // Get form data
-        const formData = new FormData(form);
+        const formData = new FormData(newForm);
         console.log('Form data:');
         for (const [key, value] of formData.entries()) {
           console.log(`${key}: ${value}`);
         }
 
         // Update button state
-        const submitButton = form.querySelector('button[type="submit"]') || form.querySelector('input[type="submit"]');
+        const submitButton = newForm.querySelector('button[type="submit"]') || newForm.querySelector('input[type="submit"]');
+        const originalText = submitButton ? submitButton.textContent : 'Contact us';
+        
         if (submitButton) {
           submitButton.textContent = 'Sending...';
           submitButton.disabled = true;
@@ -124,11 +140,11 @@ const metadata = {
 
         // Send email via EmailJS
         emailjs
-          .sendForm('service_rqrfp3j', 'template_nobdnyg', form)
+          .sendForm('service_rqrfp3j', 'template_nobdnyg', newForm)
           .then(function (response) {
             console.log('EmailJS SUCCESS:', response);
             alert("Message sent successfully! We'll get back to you within 24 hours.");
-            form.reset();
+            newForm.reset();
           })
           .catch(function (error) {
             console.error('EmailJS ERROR:', error);
@@ -136,32 +152,42 @@ const metadata = {
           })
           .finally(function () {
             if (submitButton) {
-              submitButton.textContent = 'Contact us';
+              submitButton.textContent = originalText;
               submitButton.disabled = false;
             }
           });
+
+        return false;
       });
 
+      // Also add onclick to the submit button as backup
+      const submitButton = newForm.querySelector('button[type="submit"]');
+      if (submitButton) {
+        submitButton.onclick = function(event) {
+          console.log('Submit button clicked - triggering form submission');
+          event.preventDefault();
+          newForm.dispatchEvent(new Event('submit'));
+          return false;
+        };
+      }
+
+      formHandlerAttached = true;
       console.log('Form handler attached successfully');
     } else {
       console.error('No forms found on page!');
     }
   }
 
-  // Try immediately when DOM is ready
+  // Multiple attempts to catch the form
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', setupFormHandler);
   } else {
     setupFormHandler();
   }
 
-  // Backup: try again after window loads
-  window.addEventListener('load', function () {
-    console.log('Window loaded, double-checking form handler...');
-    const forms = document.querySelectorAll('form');
-    if (forms.length > 0 && !forms[0].hasAttribute('data-handler-attached')) {
-      forms[0].setAttribute('data-handler-attached', 'true');
-      setupFormHandler();
-    }
-  });
+  window.addEventListener('load', setupFormHandler);
+  
+  // Also try after a small delay
+  setTimeout(setupFormHandler, 100);
+  setTimeout(setupFormHandler, 500);
 </script>

@@ -5,7 +5,7 @@ import Button from '~/components/ui/Button.astro';
 const { inputs, textarea, disclaimer, button = 'Contact us', description = '', id } = Astro.props;
 ---
 
-<form id={id}>
+<form id={id} onsubmit="return false;">
   {
     inputs &&
       inputs.map(
