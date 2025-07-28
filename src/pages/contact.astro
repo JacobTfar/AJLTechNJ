@@ -91,11 +91,16 @@ const metadata = {
 
   // Handle form submission
   document.addEventListener('DOMContentLoaded', function () {
+    console.log('DOM loaded, looking for form...');
     const form = document.getElementById('contactForm');
+    console.log('Found form:', form);
 
     if (form) {
+      console.log('Setting up form event listener...');
       form.addEventListener('submit', function (event) {
+        console.log('Form submit event triggered!');
         event.preventDefault();
+        console.log('Default prevented - EmailJS will handle this');
 
         // Debug: Log form data
         const formData = new FormData(form);
@@ -130,6 +135,39 @@ const metadata = {
             submitButton.disabled = false;
           });
       });
+    } else {
+      console.error('Contact form not found! Looking for #contactForm');
+      console.log('Available forms on page:', document.querySelectorAll('form'));
+    }
+  });
+
+  // Backup: Try again after window loads (in case of timing issues)
+  window.addEventListener('load', function() {
+    if (!document.getElementById('contactForm')) {
+      console.log('Trying alternative form selection...');
+      const forms = document.querySelectorAll('form');
+      if (forms.length > 0) {
+        const form = forms[0]; // Use the first form found
+        console.log('Found form without ID, adding event listener:', form);
+        form.id = 'contactForm'; // Add the missing ID
+        form.addEventListener('submit', function (event) {
+          console.log('Backup form handler triggered!');
+          event.preventDefault();
+          
+          // Send via EmailJS (same logic as above)
+          emailjs
+            .sendForm('service_rqrfp3j', 'template_nobdnyg', form)
+            .then(function (response) {
+              console.log('SUCCESS!', response.status, response.text);
+              alert("Message sent successfully! We'll get back to you within 24 hours.");
+              form.reset();
+            })
+            .catch(function (error) {
+              console.error('FAILED...', error);
+              alert('Failed to send message. Please email us directly at info@ajltechnj.com');
+            });
+        });
+      }
     }
   });
 </script>
