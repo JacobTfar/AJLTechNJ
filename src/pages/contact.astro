@@ -89,18 +89,18 @@ const metadata = {
   emailjs.init('iFk6dR2JaXJllcyJj');
 
   // Wait for DOM to be fully loaded
-  document.addEventListener('DOMContentLoaded', function() {
+  document.addEventListener('DOMContentLoaded', function () {
     console.log('DOM loaded, setting up EmailJS...');
-    
+
     const btn = document.getElementById('button');
     const form = document.getElementById('contactForm');
-    
+
     console.log('Button found:', btn);
     console.log('Form found:', form);
-    
+
     if (form && btn) {
       // Add event listener to form submission
-      form.addEventListener('submit', function(event) {
+      form.addEventListener('submit', function (event) {
         console.log('Form submitted, preventing default...');
         event.preventDefault();
 
@@ -117,21 +117,23 @@ const metadata = {
           console.log(key + ': ' + value);
         }
 
-        emailjs.sendForm(serviceID, templateID, form)
-          .then(() => {
+        emailjs.sendForm(serviceID, templateID, form).then(
+          () => {
             console.log('EmailJS SUCCESS');
             btn.value = 'Send Email';
             btn.disabled = false;
-            alert('Message sent successfully! We\'ll get back to you within 24 hours.');
+            alert("Message sent successfully! We'll get back to you within 24 hours.");
             form.reset();
-          }, (err) => {
+          },
+          (err) => {
             console.log('EmailJS FAILED:', err);
             btn.value = 'Send Email';
             btn.disabled = false;
             alert('Failed to send message. Please try again or email us directly at info@ajltechnj.com');
-          });
+          }
+        );
       });
-      
+
       console.log('EmailJS form handler attached successfully');
     } else {
       console.error('Form or button not found!');
