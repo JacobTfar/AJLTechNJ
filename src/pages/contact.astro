@@ -86,7 +86,7 @@ const metadata = {
 ></script>
 <script type="text/javascript" is:inline>
   console.log('EmailJS script loading...');
-  
+
   // Initialize EmailJS immediately
   emailjs.init('iFk6dR2JaXJllcyJj');
   console.log('EmailJS initialized with public key');
@@ -105,7 +105,7 @@ const metadata = {
       form.parentNode.replaceChild(newForm, form);
 
       // Prevent default form submission completely
-      newForm.onsubmit = function(e) {
+      newForm.onsubmit = function (e) {
         console.log('Form onsubmit triggered - preventing default');
         e.preventDefault();
         e.stopPropagation();
@@ -116,10 +116,10 @@ const metadata = {
       // Also handle button clicks
       const buttons = newForm.querySelectorAll('button');
       console.log('Found buttons:', buttons.length);
-      
-      buttons.forEach(button => {
+
+      buttons.forEach((button) => {
         console.log('Adding click handler to button:', button);
-        button.onclick = function(e) {
+        button.onclick = function (e) {
           console.log('Button clicked - preventing default and sending email');
           e.preventDefault();
           e.stopPropagation();
@@ -136,7 +136,7 @@ const metadata = {
 
   function sendEmail(form) {
     console.log('sendEmail function called');
-    
+
     // Show form data
     const formData = new FormData(form);
     console.log('Form data:');
@@ -147,26 +147,27 @@ const metadata = {
     // Update button
     const button = form.querySelector('button');
     const originalText = button ? button.textContent : 'Contact us';
-    
+
     if (button) {
       button.textContent = 'Sending...';
       button.disabled = true;
     }
 
     console.log('Sending via EmailJS...');
-    
+
     // Send with EmailJS
-    emailjs.sendForm('service_rqrfp3j', 'template_nobdnyg', form)
-      .then(function(response) {
+    emailjs
+      .sendForm('service_rqrfp3j', 'template_nobdnyg', form)
+      .then(function (response) {
         console.log('SUCCESS!', response);
-        alert('Message sent successfully! We\'ll get back to you within 24 hours.');
+        alert("Message sent successfully! We'll get back to you within 24 hours.");
         form.reset();
       })
-      .catch(function(error) {
+      .catch(function (error) {
         console.error('ERROR!', error);
         alert('Failed to send message. Please try again or email us directly at info@ajltechnj.com');
       })
-      .finally(function() {
+      .finally(function () {
         if (button) {
           button.textContent = originalText;
           button.disabled = false;
@@ -176,18 +177,18 @@ const metadata = {
 
   // Try multiple times to catch the form
   console.log('Setting up form interception...');
-  
+
   // Try immediately
   interceptForm();
-  
+
   // Try when DOM is ready
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', interceptForm);
   }
-  
+
   // Try when window loads
   window.addEventListener('load', interceptForm);
-  
+
   // Try with delays
   setTimeout(interceptForm, 100);
   setTimeout(interceptForm, 500);
