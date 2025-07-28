@@ -82,7 +82,8 @@ const metadata = {
 </Layout>
 
 <!-- EmailJS Integration -->
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js" is:inline></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js" is:inline
+></script>
 <script type="text/javascript" is:inline>
   // Initialize EmailJS with your public key
   emailjs.init('Ck9gkjhX0wmiVatpv');
@@ -92,37 +93,38 @@ const metadata = {
     console.log('Setting up form handler...');
     const forms = document.querySelectorAll('form');
     console.log('Found forms:', forms.length);
-    
+
     if (forms.length > 0) {
       const form = forms[0]; // Get the first (and likely only) form
       console.log('Selected form:', form);
-      
+
       // Add ID if missing
       if (!form.id) {
         form.id = 'contact-form';
         console.log('Added ID to form');
       }
-      
+
       form.addEventListener('submit', function (event) {
         console.log('Form submission intercepted!');
         event.preventDefault();
-        
+
         // Get form data
         const formData = new FormData(form);
         console.log('Form data:');
         for (const [key, value] of formData.entries()) {
           console.log(`${key}: ${value}`);
         }
-        
+
         // Update button state
         const submitButton = form.querySelector('button[type="submit"]') || form.querySelector('input[type="submit"]');
         if (submitButton) {
           submitButton.textContent = 'Sending...';
           submitButton.disabled = true;
         }
-        
+
         // Send email via EmailJS
-        emailjs.sendForm('service_rqrfp3j', 'template_nobdnyg', form)
+        emailjs
+          .sendForm('service_rqrfp3j', 'template_nobdnyg', form)
           .then(function (response) {
             console.log('EmailJS SUCCESS:', response);
             alert("Message sent successfully! We'll get back to you within 24 hours.");
@@ -139,7 +141,7 @@ const metadata = {
             }
           });
       });
-      
+
       console.log('Form handler attached successfully');
     } else {
       console.error('No forms found on page!');
@@ -154,7 +156,7 @@ const metadata = {
   }
 
   // Backup: try again after window loads
-  window.addEventListener('load', function() {
+  window.addEventListener('load', function () {
     console.log('Window loaded, double-checking form handler...');
     const forms = document.querySelectorAll('form');
     if (forms.length > 0 && !forms[0].hasAttribute('data-handler-attached')) {
