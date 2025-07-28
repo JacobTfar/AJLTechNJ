@@ -85,8 +85,8 @@ const metadata = {
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js" is:inline
 ></script>
 <script type="text/javascript" is:inline>
-  // Initialize EmailJS with your public key
-  emailjs.init('Ck9gkjhX0wmiVatpv');
+  // Initialize EmailJS with your correct public key
+  emailjs.init('iFk6dR2JaXJllcyJj');
 
   let formHandlerAttached = false;
 
@@ -104,71 +104,32 @@ const metadata = {
       const form = forms[0];
       console.log('Selected form:', form);
 
-      // Remove onsubmit attribute and add our handler
-      form.removeAttribute('onsubmit');
-      
       // Add ID if missing
       if (!form.id) {
         form.id = 'contact-form';
         console.log('Added ID to form');
       }
 
-      // Remove any existing event listeners by cloning the form
-      const newForm = form.cloneNode(true);
-      form.parentNode.replaceChild(newForm, form);
-
-      newForm.addEventListener('submit', function (event) {
+      // Handle form submission
+      form.addEventListener('submit', function (event) {
         console.log('Form submission intercepted by EmailJS!');
         event.preventDefault();
         event.stopPropagation();
-
-        // Get form data
-        const formData = new FormData(newForm);
-        console.log('Form data:');
-        for (const [key, value] of formData.entries()) {
-          console.log(`${key}: ${value}`);
-        }
-
-        // Update button state
-        const submitButton = newForm.querySelector('button[type="submit"]') || newForm.querySelector('input[type="submit"]');
-        const originalText = submitButton ? submitButton.textContent : 'Contact us';
-        
-        if (submitButton) {
-          submitButton.textContent = 'Sending...';
-          submitButton.disabled = true;
-        }
-
-        // Send email via EmailJS
-        emailjs
-          .sendForm('service_rqrfp3j', 'template_nobdnyg', newForm)
-          .then(function (response) {
-            console.log('EmailJS SUCCESS:', response);
-            alert("Message sent successfully! We'll get back to you within 24 hours.");
-            newForm.reset();
-          })
-          .catch(function (error) {
-            console.error('EmailJS ERROR:', error);
-            alert('Failed to send message. Please try again or email us directly at info@ajltechnj.com');
-          })
-          .finally(function () {
-            if (submitButton) {
-              submitButton.textContent = originalText;
-              submitButton.disabled = false;
-            }
-          });
-
+        handleFormSubmission(form);
         return false;
       });
 
-      // Also add onclick to the submit button as backup
-      const submitButton = newForm.querySelector('button[type="submit"]');
+      // Handle button clicks directly
+      const submitButton = form.querySelector('button[type="submit"]');
       if (submitButton) {
-        submitButton.onclick = function(event) {
-          console.log('Submit button clicked - triggering form submission');
+        console.log('Found submit button, adding click handler');
+        submitButton.addEventListener('click', function(event) {
+          console.log('Submit button clicked!');
           event.preventDefault();
-          newForm.dispatchEvent(new Event('submit'));
+          event.stopPropagation();
+          handleFormSubmission(form);
           return false;
-        };
+        });
       }
 
       formHandlerAttached = true;
@@ -176,6 +137,45 @@ const metadata = {
     } else {
       console.error('No forms found on page!');
     }
+  }
+
+  function handleFormSubmission(form) {
+    console.log('Processing form submission...');
+    
+    // Get form data
+    const formData = new FormData(form);
+    console.log('Form data:');
+    for (const [key, value] of formData.entries()) {
+      console.log(`${key}: ${value}`);
+    }
+
+    // Update button state
+    const submitButton = form.querySelector('button[type="submit"]');
+    const originalText = submitButton ? submitButton.textContent : 'Contact us';
+    
+    if (submitButton) {
+      submitButton.textContent = 'Sending...';
+      submitButton.disabled = true;
+    }
+
+    // Send email via EmailJS
+    emailjs
+      .sendForm('service_rqrfp3j', 'template_nobdnyg', form)
+      .then(function (response) {
+        console.log('EmailJS SUCCESS:', response);
+        alert("Message sent successfully! We'll get back to you within 24 hours.");
+        form.reset();
+      })
+      .catch(function (error) {
+        console.error('EmailJS ERROR:', error);
+        alert('Failed to send message. Please try again or email us directly at info@ajltechnj.com');
+      })
+      .finally(function () {
+        if (submitButton) {
+          submitButton.textContent = originalText;
+          submitButton.disabled = false;
+        }
+      });
   }
 
   // Multiple attempts to catch the form
@@ -187,7 +187,8 @@ const metadata = {
 
   window.addEventListener('load', setupFormHandler);
   
-  // Also try after a small delay
+  // Also try after small delays
   setTimeout(setupFormHandler, 100);
   setTimeout(setupFormHandler, 500);
+  setTimeout(setupFormHandler, 1000);
 </script>
