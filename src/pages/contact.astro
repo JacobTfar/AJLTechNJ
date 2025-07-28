@@ -85,108 +85,58 @@ const metadata = {
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js" is:inline
 ></script>
 <script type="text/javascript" is:inline>
-  console.log('EmailJS script loading...');
-
-  // Initialize EmailJS immediately
+  // Initialize EmailJS
   emailjs.init('iFk6dR2JaXJllcyJj');
-  console.log('EmailJS initialized with public key');
 
-  function interceptForm() {
-    console.log('Looking for forms...');
-    const forms = document.querySelectorAll('form');
-    console.log('Found forms:', forms.length);
+  // Wait for DOM to be fully loaded
+  document.addEventListener('DOMContentLoaded', function() {
+    console.log('DOM loaded, setting up EmailJS...');
+    
+    const btn = document.getElementById('button');
+    const form = document.getElementById('contactForm');
+    
+    console.log('Button found:', btn);
+    console.log('Form found:', form);
+    
+    if (form && btn) {
+      // Add event listener to form submission
+      form.addEventListener('submit', function(event) {
+        console.log('Form submitted, preventing default...');
+        event.preventDefault();
 
-    if (forms.length > 0) {
-      const form = forms[0];
-      console.log('Working with form:', form);
+        btn.value = 'Sending...';
+        btn.disabled = true;
 
-      // Find the submit button (input type="submit")
-      const submitButton = form.querySelector('input[type="submit"]');
-      console.log('Found submit button:', submitButton);
+        const serviceID = 'service_rqrfp3j';
+        const templateID = 'template_nobdnyg';
 
-      // Handle form submission
-      form.addEventListener('submit', function (e) {
-        console.log('Form submit event triggered');
-        e.preventDefault();
-        e.stopPropagation();
-        sendEmail(form);
-        return false;
-      });
-
-      // Also handle submit button clicks directly
-      if (submitButton) {
-        submitButton.addEventListener('click', function (e) {
-          console.log('Submit button clicked');
-          e.preventDefault();
-          e.stopPropagation();
-          sendEmail(form);
-          return false;
-        });
-      }
-
-      console.log('Form event handlers attached successfully');
-    } else {
-      console.error('No forms found!');
-    }
-  }
-
-  function sendEmail(form) {
-    console.log('sendEmail function called');
-
-    // Show form data
-    const formData = new FormData(form);
-    console.log('Form data:');
-    for (const [key, value] of formData.entries()) {
-      console.log(`${key}: ${value}`);
-    }
-
-    // Update submit button
-    const submitButton = form.querySelector('input[type="submit"]');
-    const originalValue = submitButton ? submitButton.value : 'Send Email';
-
-    if (submitButton) {
-      submitButton.value = 'Sending...';
-      submitButton.disabled = true;
-    }
-
-    console.log('Sending via EmailJS...');
-
-    // Send with EmailJS
-    emailjs
-      .sendForm('service_rqrfp3j', 'template_nobdnyg', form)
-      .then(function (response) {
-        console.log('SUCCESS!', response);
-        alert("Message sent successfully! We'll get back to you within 24 hours.");
-        form.reset();
-      })
-      .catch(function (error) {
-        console.error('ERROR!', error);
-        alert('Failed to send message. Please try again or email us directly at info@ajltechnj.com');
-      })
-      .finally(function () {
-        if (submitButton) {
-          submitButton.value = originalValue;
-          submitButton.disabled = false;
+        // Log form data
+        const formData = new FormData(form);
+        console.log('Sending form data:');
+        for (const [key, value] of formData.entries()) {
+          console.log(key + ': ' + value);
         }
+
+        emailjs.sendForm(serviceID, templateID, form)
+          .then(() => {
+            console.log('EmailJS SUCCESS');
+            btn.value = 'Send Email';
+            btn.disabled = false;
+            alert('Message sent successfully! We\'ll get back to you within 24 hours.');
+            form.reset();
+          }, (err) => {
+            console.log('EmailJS FAILED:', err);
+            btn.value = 'Send Email';
+            btn.disabled = false;
+            alert('Failed to send message. Please try again or email us directly at info@ajltechnj.com');
+          });
       });
-  }
-
-  // Try multiple times to catch the form
-  console.log('Setting up form interception...');
-
-  // Try when DOM is ready
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', interceptForm);
-  } else {
-    interceptForm();
-  }
-
-  // Try when window loads
-  window.addEventListener('load', interceptForm);
-
-  // Try with delays
-  setTimeout(interceptForm, 500);
-  setTimeout(interceptForm, 1000);
-
-  console.log('EmailJS script setup complete');
+      
+      console.log('EmailJS form handler attached successfully');
+    } else {
+      console.error('Form or button not found!');
+      console.log('Available forms:', document.querySelectorAll('form'));
+      console.log('Available buttons:', document.querySelectorAll('#button'));
+    }
+  });
 </script>
